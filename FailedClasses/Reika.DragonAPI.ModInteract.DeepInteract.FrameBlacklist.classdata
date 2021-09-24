@@ -1,0 +1,54 @@
+General:
+	Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist
+	Annotations: []
+	Modifiers: [PUBLIC]
+	Superclass: class java.lang.Object
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+-------------------------
+General:
+	Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist$FramezHandler
+	Annotations: [@Reika.DragonAPI.ASM.APIStripper$Strippable(side=NONE, value=[com.amadornes.framez.api.movement.IMovementHandler])]
+	Modifiers: [PUBLIC]
+	Superclass: class java.lang.Object
+	Interfaces: []
+	Synthetic: false
+
+
+Internal Classes:
+
+
+Constructors:
+		Annotations: []
+		Modifiers: []
+		Signature: [class Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist, class Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist$1]
+		Exceptions: []
+		Synthetic: true
+
+		Annotations: []
+		Modifiers: [PRIVATE]
+		Signature: [class Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist]
+		Exceptions: []
+		Synthetic: false
+
+
+
+Fields:
+	this$0
+		Annotations: []
+		Modifiers: [FINAL]
+		Type: class Reika.DragonAPI.ModInteract.DeepInteract.FrameBlacklist
+		Synthetic: true
+
+
+
+Methods:
+-------------------------
+
+
+Constructors:
+Fields:
+Methods:
