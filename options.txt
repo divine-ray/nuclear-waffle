@@ -101,14 +101,26 @@ key_Jump:0
 key_Yeta Wrench Mode:21
 key_Toggle Electromagnet:0
 key_invtweaks.key.sort:19
+key_pe.key.armor_toggle:33
+key_pe.key.charge:47
+key_pe.key.extra_function:46
+key_pe.key.fire_projectile:19
+key_pe.key.mode:34
 key_key.cofh.empower:47
 key_key.cofh.multimode:46
+key_key.journeymap.map_toggle:36
+key_key.journeymap.zoom_in:13
+key_key.journeymap.zoom_out:12
+key_key.journeymap.minimap_type:26
+key_key.journeymap.minimap_type:27
+key_key.journeymap.minimap_preset:43
+key_key.journeymap.create_waypoint:48
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0
-soundCategory_weather:1.0
+soundCategory_weather:0.0
 soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0
 soundCategory_player:1.0
-soundCategory_ambient:1.0
+soundCategory_ambient:0.06338028
