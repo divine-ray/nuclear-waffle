@@ -318,8 +318,6 @@ appliedenergistics2:tile.BlockSkyStone:3, Sky Stone Small Brick
 appliedenergistics2:tile.BlockSkyChest:0, Sky Stone Chest
 appliedenergistics2:tile.BlockSkyChest:1, Sky Stone Block Chest
 appliedenergistics2:tile.BlockSkyCompass, Meteorite Compass
-appliedenergistics2:tile.BlockGrinder, Quartz Grindstone
-appliedenergistics2:tile.BlockCrank, Wooden Crank
 appliedenergistics2:tile.BlockInscriber, Inscriber
 appliedenergistics2:tile.BlockWireless, ME Wireless Access Point
 appliedenergistics2:tile.BlockCharger, Charger
@@ -396,6 +394,8 @@ BuildCraft|Core:engineBlock:0, Redstone Engine
 BuildCraft|Core:markerBlock, Land Mark
 BuildCraft|Core:pathMarkerBlock, Path Mark
 BuildCraft|Factory:miningWellBlock, Mining Well
+BuildCraft|Factory:plainPipeBlock, Mining Pipe
+BuildCraft|Factory:autoWorkbenchBlock, Auto Workbench
 minecraft:iron_shovel, Iron Shovel
 minecraft:iron_pickaxe, Iron Pickaxe
 minecraft:iron_axe, Iron Axe
@@ -665,22 +665,20 @@ minecraft:netherbrick, Nether Brick
 minecraft:quartz, Nether Quartz
 minecraft:tnt_minecart, Minecart with TNT
 minecraft:hopper_minecart, Minecart with Hopper
-BuildCraft|Factory:plainPipeBlock, Mining Pipe
-BuildCraft|Factory:autoWorkbenchBlock, Auto Workbench
 BuildCraft|Factory:tankBlock, Tank
 BuildCraft|Factory:pumpBlock, Pump
 BuildCraft|Factory:floodGateBlock, Flood Gate
 BuildCraft|Factory:refineryBlock, Refinery
 BuildCraft|Factory:blockHopper, Chute
 BuildCraft|Robotics:zonePlan, Zone Planner
+BuildCraft|Robotics:requester, Requester
+BuildCraft|Silicon:laserBlock, Laser
 minecraft:iron_horse_armor, Iron Horse Armor
 minecraft:golden_horse_armor, Gold Horse Armor
 minecraft:diamond_horse_armor, Diamond Horse Armor
 minecraft:lead, Lead
 minecraft:name_tag, Name Tag
 minecraft:command_block_minecart, Minecart with Command Block
-BuildCraft|Robotics:requester, Requester
-BuildCraft|Silicon:laserBlock, Laser
 BuildCraft|Silicon:laserTableBlock:0, Assembly Table
 BuildCraft|Silicon:laserTableBlock:1, Advanced Crafting Table
 BuildCraft|Silicon:laserTableBlock:2, Integration Table
@@ -2419,7 +2417,7 @@ extracells:vibrantchamberfluid, Fluid Vibration Chamber
 ExtraUtilities:chestMini, Mini-Chest
 ExtraUtilities:chestFull, Slightly Larger Chest
 ExtraUtilities:enderCollector, Ender Collector
-ExtraUtilities:endConstructor:0, QED (Quark/Electron Director)
+ExtraUtilities:endConstructor:0, QED (Quantum Emission Decompiler)
 ExtraUtilities:endConstructor:2, Ender-Flux Crystal
 ExtraUtilities:endMarker, Ender-Marker
 ExtraUtilities:curtains, Blackout Curtains
@@ -4319,7 +4317,6 @@ gregtech:gt.meta.storage.raw:8312, oredict.blockRawOpal.name
 gregtech:gt.meta.storage.raw:8313, oredict.blockRawAmethyst.name
 gregtech:gt.meta.storage.raw:8314, oredict.blockRawOrangeSapphire.name
 gregtech:gt.meta.storage.raw:8315, oredict.blockRawYellowSapphire.name
-gregtech:gt.meta.storage.raw:8316, oredict.blockRawVinteum.name
 gregtech:gt.meta.storage.raw:8317, oredict.blockRawDilithium.name
 gregtech:gt.meta.storage.raw:8320, oredict.blockRawNetherStar.name
 gregtech:gt.meta.storage.raw:8321, oredict.blockRawJade.name
@@ -4337,19 +4334,11 @@ gregtech:gt.meta.storage.raw:8334, oredict.blockRawCoal.name
 gregtech:gt.meta.storage.raw:8336, oredict.blockRawCharcoal.name
 gregtech:gt.meta.storage.raw:8337, oredict.blockRawLignite.name
 gregtech:gt.meta.storage.raw:8338, oredict.blockRawMonazite.name
-gregtech:gt.meta.storage.raw:8340, oredict.blockRawNikolite.name
 gregtech:gt.meta.storage.raw:8341, oredict.blockRawGlowstone.name
-gregtech:gt.meta.storage.raw:8343, oredict.blockRawForce.name
 gregtech:gt.meta.storage.raw:8346, oredict.blockRawNetherQuartz.name
 gregtech:gt.meta.storage.raw:8347, oredict.blockRawCertusQuartz.name
 gregtech:gt.meta.storage.raw:8348, oredict.blockRawChargedCertusQuartz.name
 gregtech:gt.meta.storage.raw:8349, oredict.blockRawCoalCoke.name
-gregtech:gt.meta.storage.raw:8352, oredict.blockRawInfusedAir.name
-gregtech:gt.meta.storage.raw:8353, oredict.blockRawInfusedFire.name
-gregtech:gt.meta.storage.raw:8354, oredict.blockRawInfusedEarth.name
-gregtech:gt.meta.storage.raw:8355, oredict.blockRawInfusedWater.name
-gregtech:gt.meta.storage.raw:8356, oredict.blockRawInfusedEntropy.name
-gregtech:gt.meta.storage.raw:8357, oredict.blockRawInfusedOrder.name
 gregtech:gt.meta.storage.raw:8362, oredict.blockRawAnthracite.name
 gregtech:gt.meta.storage.raw:8363, oredict.blockRawPrismane.name
 gregtech:gt.meta.storage.raw:8364, oredict.blockRawLonsdaleite.name
@@ -4397,31 +4386,22 @@ gregtech:gt.meta.storage.raw:8448, oredict.blockRawGreenAventurine.name
 gregtech:gt.meta.storage.raw:8449, oredict.blockRawBlackAventurine.name
 gregtech:gt.meta.storage.raw:8450, oredict.blockRawBlueAventurine.name
 gregtech:gt.meta.storage.raw:8451, oredict.blockRawRedAventurine.name
-gregtech:gt.meta.storage.raw:8452, oredict.blockRawMoonstone.name
-gregtech:gt.meta.storage.raw:8453, oredict.blockRawSunstone.name
-gregtech:gt.meta.storage.raw:8454, oredict.blockRawChimerite.name
 gregtech:gt.meta.storage.raw:8455, oredict.blockRawClayRed.name
 gregtech:gt.meta.storage.raw:8456, oredict.blockRawGloomstone.name
 gregtech:gt.meta.storage.raw:8457, oredict.blockRawVoidQuartz.name
 gregtech:gt.meta.storage.raw:8600, oredict.blockRawElectrum.name
 gregtech:gt.meta.storage.raw:8630, oredict.blockRawSteel.name
 gregtech:gt.meta.storage.raw:8642, oredict.blockRawPigIron.name
-gregtech:gt.meta.storage.raw:8648, oredict.blockRawDarkIron.name
 gregtech:gt.meta.storage.raw:8649, oredict.blockRawMeteoricIron.name
 gregtech:gt.meta.storage.raw:8676, oredict.blockRawAstralSilver.name
 gregtech:gt.meta.storage.raw:8677, oredict.blockRawMidasium.name
 gregtech:gt.meta.storage.raw:8678, oredict.blockRawMithril.name
 gregtech:gt.meta.storage.raw:8701, oredict.blockRawAredrite.name
-gregtech:gt.meta.storage.raw:8707, oredict.blockRawArdite.name
-gregtech:gt.meta.storage.raw:8719, oredict.blockRawOsmium.name
 gregtech:gt.meta.storage.raw:8736, oredict.blockRawEndium.name
 gregtech:gt.meta.storage.raw:8744, oredict.blockRawAncientDebris.name
 gregtech:gt.meta.storage.raw:8747, oredict.blockRawEfrine.name
 gregtech:gt.meta.storage.raw:8753, oredict.blockRawDolamide.name
-gregtech:gt.meta.storage.raw:8763, oredict.blockRawMeutoite.name
-gregtech:gt.meta.storage.raw:8773, oredict.blockRawEximite.name
 gregtech:gt.meta.storage.raw:8784, oredict.blockRawAdamantine.name
-gregtech:gt.meta.storage.raw:8791, oredict.blockRawDraconium.name
 gregtech:gt.meta.storage.raw:8795, oredict.blockRawBedrockium.name
 gregtech:gt.meta.storage.raw:9001, oredict.blockRawDiatomite.name
 gregtech:gt.meta.storage.raw:9003, oredict.blockRawBasalticMineralSand.name
@@ -4569,7 +4549,6 @@ gregtech:gt.meta.storage.gem:8312, oredict.blockGemOpal.name
 gregtech:gt.meta.storage.gem:8313, oredict.blockGemAmethyst.name
 gregtech:gt.meta.storage.gem:8314, oredict.blockGemOrangeSapphire.name
 gregtech:gt.meta.storage.gem:8315, oredict.blockGemYellowSapphire.name
-gregtech:gt.meta.storage.gem:8316, oredict.blockGemVinteum.name
 gregtech:gt.meta.storage.gem:8317, oredict.blockGemDilithium.name
 gregtech:gt.meta.storage.gem:8318, oredict.blockGemEnderPearl.name
 gregtech:gt.meta.storage.gem:8319, oredict.blockGemEnderEye.name
@@ -4589,19 +4568,11 @@ gregtech:gt.meta.storage.gem:8334, oredict.blockGemCoal.name
 gregtech:gt.meta.storage.gem:8336, oredict.blockGemCharcoal.name
 gregtech:gt.meta.storage.gem:8337, oredict.blockGemLignite.name
 gregtech:gt.meta.storage.gem:8338, oredict.blockGemMonazite.name
-gregtech:gt.meta.storage.gem:8340, oredict.blockGemNikolite.name
 gregtech:gt.meta.storage.gem:8341, oredict.blockGemGlowstone.name
-gregtech:gt.meta.storage.gem:8343, oredict.blockGemForce.name
 gregtech:gt.meta.storage.gem:8346, oredict.blockGemNetherQuartz.name
 gregtech:gt.meta.storage.gem:8347, oredict.blockGemCertusQuartz.name
 gregtech:gt.meta.storage.gem:8348, oredict.blockGemChargedCertusQuartz.name
 gregtech:gt.meta.storage.gem:8349, oredict.blockGemCoalCoke.name
-gregtech:gt.meta.storage.gem:8352, oredict.blockGemInfusedAir.name
-gregtech:gt.meta.storage.gem:8353, oredict.blockGemInfusedFire.name
-gregtech:gt.meta.storage.gem:8354, oredict.blockGemInfusedEarth.name
-gregtech:gt.meta.storage.gem:8355, oredict.blockGemInfusedWater.name
-gregtech:gt.meta.storage.gem:8356, oredict.blockGemInfusedEntropy.name
-gregtech:gt.meta.storage.gem:8357, oredict.blockGemInfusedOrder.name
 gregtech:gt.meta.storage.gem:8362, oredict.blockGemAnthracite.name
 gregtech:gt.meta.storage.gem:8363, oredict.blockGemPrismane.name
 gregtech:gt.meta.storage.gem:8364, oredict.blockGemLonsdaleite.name
@@ -4651,9 +4622,6 @@ gregtech:gt.meta.storage.gem:8448, oredict.blockGemGreenAventurine.name
 gregtech:gt.meta.storage.gem:8449, oredict.blockGemBlackAventurine.name
 gregtech:gt.meta.storage.gem:8450, oredict.blockGemBlueAventurine.name
 gregtech:gt.meta.storage.gem:8451, oredict.blockGemRedAventurine.name
-gregtech:gt.meta.storage.gem:8452, oredict.blockGemMoonstone.name
-gregtech:gt.meta.storage.gem:8453, oredict.blockGemSunstone.name
-gregtech:gt.meta.storage.gem:8454, oredict.blockGemChimerite.name
 gregtech:gt.meta.storage.gem:8456, oredict.blockGemGloomstone.name
 gregtech:gt.meta.storage.gem:8457, oredict.blockGemVoidQuartz.name
 gregtech:gt.meta.storage.gem:8746, oredict.blockGemNetherizedDiamond.name
@@ -4909,7 +4877,6 @@ gregtech:gt.meta.storage.dust:8312, oredict.blockDustOpal.name
 gregtech:gt.meta.storage.dust:8313, oredict.blockDustAmethyst.name
 gregtech:gt.meta.storage.dust:8314, oredict.blockDustOrangeSapphire.name
 gregtech:gt.meta.storage.dust:8315, oredict.blockDustYellowSapphire.name
-gregtech:gt.meta.storage.dust:8316, oredict.blockDustVinteum.name
 gregtech:gt.meta.storage.dust:8317, oredict.blockDustDilithium.name
 gregtech:gt.meta.storage.dust:8318, oredict.blockDustEnderPearl.name
 gregtech:gt.meta.storage.dust:8319, oredict.blockDustEnderEye.name
@@ -4930,19 +4897,11 @@ gregtech:gt.meta.storage.dust:8335, oredict.blockDustHydratedCoal.name
 gregtech:gt.meta.storage.dust:8336, oredict.blockDustCharcoal.name
 gregtech:gt.meta.storage.dust:8337, oredict.blockDustLignite.name
 gregtech:gt.meta.storage.dust:8338, oredict.blockDustMonazite.name
-gregtech:gt.meta.storage.dust:8340, oredict.blockDustNikolite.name
 gregtech:gt.meta.storage.dust:8341, oredict.blockDustGlowstone.name
-gregtech:gt.meta.storage.dust:8343, oredict.blockDustForce.name
 gregtech:gt.meta.storage.dust:8346, oredict.blockDustNetherQuartz.name
 gregtech:gt.meta.storage.dust:8347, oredict.blockDustCertusQuartz.name
 gregtech:gt.meta.storage.dust:8348, oredict.blockDustChargedCertusQuartz.name
 gregtech:gt.meta.storage.dust:8349, oredict.blockDustCoalCoke.name
-gregtech:gt.meta.storage.dust:8352, oredict.blockDustInfusedAir.name
-gregtech:gt.meta.storage.dust:8353, oredict.blockDustInfusedFire.name
-gregtech:gt.meta.storage.dust:8354, oredict.blockDustInfusedEarth.name
-gregtech:gt.meta.storage.dust:8355, oredict.blockDustInfusedWater.name
-gregtech:gt.meta.storage.dust:8356, oredict.blockDustInfusedEntropy.name
-gregtech:gt.meta.storage.dust:8357, oredict.blockDustInfusedOrder.name
 gregtech:gt.meta.storage.dust:8360, oredict.blockDustPeat.name
 gregtech:gt.meta.storage.dust:8361, oredict.blockDustPeatBituminous.name
 gregtech:gt.meta.storage.dust:8362, oredict.blockDustAnthracite.name
@@ -4996,9 +4955,6 @@ gregtech:gt.meta.storage.dust:8448, oredict.blockDustGreenAventurine.name
 gregtech:gt.meta.storage.dust:8449, oredict.blockDustBlackAventurine.name
 gregtech:gt.meta.storage.dust:8450, oredict.blockDustBlueAventurine.name
 gregtech:gt.meta.storage.dust:8451, oredict.blockDustRedAventurine.name
-gregtech:gt.meta.storage.dust:8452, oredict.blockDustMoonstone.name
-gregtech:gt.meta.storage.dust:8453, oredict.blockDustSunstone.name
-gregtech:gt.meta.storage.dust:8454, oredict.blockDustChimerite.name
 gregtech:gt.meta.storage.dust:8455, oredict.blockDustClayRed.name
 gregtech:gt.meta.storage.dust:8456, oredict.blockDustGloomstone.name
 gregtech:gt.meta.storage.dust:8457, oredict.blockDustVoidQuartz.name
@@ -5041,15 +4997,11 @@ gregtech:gt.meta.storage.dust:8637, oredict.blockDustHSLASteel.name
 gregtech:gt.meta.storage.dust:8638, oredict.blockDustTungstenCarbide.name
 gregtech:gt.meta.storage.dust:8639, oredict.blockDustHSLASpringSteel.name
 gregtech:gt.meta.storage.dust:8642, oredict.blockDustPigIron.name
-gregtech:gt.meta.storage.dust:8648, oredict.blockDustDarkIron.name
 gregtech:gt.meta.storage.dust:8649, oredict.blockDustMeteoricIron.name
 gregtech:gt.meta.storage.dust:8650, oredict.blockDustMeteoricSteel.name
 gregtech:gt.meta.storage.dust:8651, oredict.blockDustSteelGalvanized.name
 gregtech:gt.meta.storage.dust:8653, oredict.blockDustVanadiumSteel.name
 gregtech:gt.meta.storage.dust:8654, oredict.blockDustTitaniumGold.name
-gregtech:gt.meta.storage.dust:8657, oredict.blockDustPurpleAlloy.name
-gregtech:gt.meta.storage.dust:8658, oredict.blockDustElectrotineAlloy.name
-gregtech:gt.meta.storage.dust:8659, oredict.blockDustBlueAlloy.name
 gregtech:gt.meta.storage.dust:8660, oredict.blockDustRedAlloy.name
 gregtech:gt.meta.storage.dust:8661, oredict.blockDustInvar.name
 gregtech:gt.meta.storage.dust:8662, oredict.blockDustConstantan.name
@@ -5076,17 +5028,14 @@ gregtech:gt.meta.storage.dust:8689, oredict.blockDustNiobiumTitanium.name
 gregtech:gt.meta.storage.dust:8700, oredict.blockDustAluminiumBrass.name
 gregtech:gt.meta.storage.dust:8701, oredict.blockDustAredrite.name
 gregtech:gt.meta.storage.dust:8702, oredict.blockDustAlumite.name
-gregtech:gt.meta.storage.dust:8703, oredict.blockDustManyullyn.name
 gregtech:gt.meta.storage.dust:8704, oredict.blockDustVibraniumSteel.name
 gregtech:gt.meta.storage.dust:8705, oredict.blockDustVibraniumSilver.name
 gregtech:gt.meta.storage.dust:8706, oredict.blockDustVibramantium.name
-gregtech:gt.meta.storage.dust:8707, oredict.blockDustArdite.name
 gregtech:gt.meta.storage.dust:8708, oredict.blockDustSignalum.name
 gregtech:gt.meta.storage.dust:8709, oredict.blockDustLumium.name
 gregtech:gt.meta.storage.dust:8710, oredict.blockDustEnderium.name
 gregtech:gt.meta.storage.dust:8711, oredict.blockDustElectrumFlux.name
 gregtech:gt.meta.storage.dust:8718, oredict.blockDustBedrockHSLAAlloy.name
-gregtech:gt.meta.storage.dust:8719, oredict.blockDustOsmium.name
 gregtech:gt.meta.storage.dust:8725, oredict.blockDustPulsatingIron.name
 gregtech:gt.meta.storage.dust:8726, oredict.blockDustVibrantAlloy.name
 gregtech:gt.meta.storage.dust:8727, oredict.blockDustConductiveIron.name
@@ -5098,7 +5047,6 @@ gregtech:gt.meta.storage.dust:8732, oredict.blockDustSoularium.name
 gregtech:gt.meta.storage.dust:8733, oredict.blockDustRedstoneAlloy.name
 gregtech:gt.meta.storage.dust:8734, oredict.blockDustSpectreIron.name
 gregtech:gt.meta.storage.dust:8736, oredict.blockDustEndium.name
-gregtech:gt.meta.storage.dust:8737, oredict.blockDustNikolineAlloy.name
 gregtech:gt.meta.storage.dust:8744, oredict.blockDustAncientDebris.name
 gregtech:gt.meta.storage.dust:8745, oredict.blockDustNetherite.name
 gregtech:gt.meta.storage.dust:8746, oredict.blockDustNetherizedDiamond.name
@@ -5107,14 +5055,10 @@ gregtech:gt.meta.storage.dust:8751, oredict.blockDustDuranium.name
 gregtech:gt.meta.storage.dust:8752, oredict.blockDustTritanium.name
 gregtech:gt.meta.storage.dust:8753, oredict.blockDustDolamide.name
 gregtech:gt.meta.storage.dust:8756, oredict.blockDustDuralumin.name
-gregtech:gt.meta.storage.dust:8763, oredict.blockDustMeutoite.name
 gregtech:gt.meta.storage.dust:8766, oredict.blockDustHSLATungstenAlloy.name
-gregtech:gt.meta.storage.dust:8773, oredict.blockDustEximite.name
-gregtech:gt.meta.storage.dust:8781, oredict.blockDustDesichalkos.name
 gregtech:gt.meta.storage.dust:8782, oredict.blockDustTartarite.name
 gregtech:gt.meta.storage.dust:8784, oredict.blockDustAdamantine.name
 gregtech:gt.meta.storage.dust:8790, oredict.blockDustTrinitanium.name
-gregtech:gt.meta.storage.dust:8791, oredict.blockDustDraconium.name
 gregtech:gt.meta.storage.dust:8793, oredict.blockDustTitaniumIridium.name
 gregtech:gt.meta.storage.dust:8794, oredict.blockDustTitaniumAluminide.name
 gregtech:gt.meta.storage.dust:8795, oredict.blockDustBedrockium.name
@@ -5532,7 +5476,6 @@ gregtech:gt.meta.storage.ingot:8281, oredict.blockIngotWaxSoulful.name
 gregtech:gt.meta.storage.ingot:8334, oredict.blockIngotCoal.name
 gregtech:gt.meta.storage.ingot:8336, oredict.blockIngotCharcoal.name
 gregtech:gt.meta.storage.ingot:8337, oredict.blockIngotLignite.name
-gregtech:gt.meta.storage.ingot:8343, oredict.blockIngotForce.name
 gregtech:gt.meta.storage.ingot:8349, oredict.blockIngotCoalCoke.name
 gregtech:gt.meta.storage.ingot:8360, oredict.blockIngotPeat.name
 gregtech:gt.meta.storage.ingot:8361, oredict.blockIngotPeatBituminous.name
@@ -5572,16 +5515,12 @@ gregtech:gt.meta.storage.ingot:8644, oredict.blockIngotIronCompressed.name
 gregtech:gt.meta.storage.ingot:8645, oredict.blockIngotIronMagnetic.name
 gregtech:gt.meta.storage.ingot:8646, oredict.blockIngotSteelMagnetic.name
 gregtech:gt.meta.storage.ingot:8647, oredict.blockIngotNeodymiumMagnetic.name
-gregtech:gt.meta.storage.ingot:8648, oredict.blockIngotDarkIron.name
 gregtech:gt.meta.storage.ingot:8649, oredict.blockIngotMeteoricIron.name
 gregtech:gt.meta.storage.ingot:8650, oredict.blockIngotMeteoricSteel.name
 gregtech:gt.meta.storage.ingot:8651, oredict.blockIngotSteelGalvanized.name
 gregtech:gt.meta.storage.ingot:8652, oredict.blockIngotTungstenSintered.name
 gregtech:gt.meta.storage.ingot:8653, oredict.blockIngotVanadiumSteel.name
 gregtech:gt.meta.storage.ingot:8654, oredict.blockIngotTitaniumGold.name
-gregtech:gt.meta.storage.ingot:8657, oredict.blockIngotPurpleAlloy.name
-gregtech:gt.meta.storage.ingot:8658, oredict.blockIngotElectrotineAlloy.name
-gregtech:gt.meta.storage.ingot:8659, oredict.blockIngotBlueAlloy.name
 gregtech:gt.meta.storage.ingot:8660, oredict.blockIngotRedAlloy.name
 gregtech:gt.meta.storage.ingot:8661, oredict.blockIngotInvar.name
 gregtech:gt.meta.storage.ingot:8662, oredict.blockIngotConstantan.name
@@ -5608,17 +5547,14 @@ gregtech:gt.meta.storage.ingot:8689, oredict.blockIngotNiobiumTitanium.name
 gregtech:gt.meta.storage.ingot:8700, oredict.blockIngotAluminiumBrass.name
 gregtech:gt.meta.storage.ingot:8701, oredict.blockIngotAredrite.name
 gregtech:gt.meta.storage.ingot:8702, oredict.blockIngotAlumite.name
-gregtech:gt.meta.storage.ingot:8703, oredict.blockIngotManyullyn.name
 gregtech:gt.meta.storage.ingot:8704, oredict.blockIngotVibraniumSteel.name
 gregtech:gt.meta.storage.ingot:8705, oredict.blockIngotVibraniumSilver.name
 gregtech:gt.meta.storage.ingot:8706, oredict.blockIngotVibramantium.name
-gregtech:gt.meta.storage.ingot:8707, oredict.blockIngotArdite.name
 gregtech:gt.meta.storage.ingot:8708, oredict.blockIngotSignalum.name
 gregtech:gt.meta.storage.ingot:8709, oredict.blockIngotLumium.name
 gregtech:gt.meta.storage.ingot:8710, oredict.blockIngotEnderium.name
 gregtech:gt.meta.storage.ingot:8711, oredict.blockIngotElectrumFlux.name
 gregtech:gt.meta.storage.ingot:8718, oredict.blockIngotBedrockHSLAAlloy.name
-gregtech:gt.meta.storage.ingot:8719, oredict.blockIngotOsmium.name
 gregtech:gt.meta.storage.ingot:8725, oredict.blockIngotPulsatingIron.name
 gregtech:gt.meta.storage.ingot:8726, oredict.blockIngotVibrantAlloy.name
 gregtech:gt.meta.storage.ingot:8727, oredict.blockIngotConductiveIron.name
@@ -5630,7 +5566,6 @@ gregtech:gt.meta.storage.ingot:8732, oredict.blockIngotSoularium.name
 gregtech:gt.meta.storage.ingot:8733, oredict.blockIngotRedstoneAlloy.name
 gregtech:gt.meta.storage.ingot:8734, oredict.blockIngotSpectreIron.name
 gregtech:gt.meta.storage.ingot:8736, oredict.blockIngotEndium.name
-gregtech:gt.meta.storage.ingot:8737, oredict.blockIngotNikolineAlloy.name
 gregtech:gt.meta.storage.ingot:8744, oredict.blockIngotAncientDebris.name
 gregtech:gt.meta.storage.ingot:8745, oredict.blockIngotNetherite.name
 gregtech:gt.meta.storage.ingot:8746, oredict.blockIngotNetherizedDiamond.name
@@ -5638,14 +5573,10 @@ gregtech:gt.meta.storage.ingot:8747, oredict.blockIngotEfrine.name
 gregtech:gt.meta.storage.ingot:8751, oredict.blockIngotDuranium.name
 gregtech:gt.meta.storage.ingot:8752, oredict.blockIngotTritanium.name
 gregtech:gt.meta.storage.ingot:8756, oredict.blockIngotDuralumin.name
-gregtech:gt.meta.storage.ingot:8763, oredict.blockIngotMeutoite.name
 gregtech:gt.meta.storage.ingot:8766, oredict.blockIngotHSLATungstenAlloy.name
-gregtech:gt.meta.storage.ingot:8773, oredict.blockIngotEximite.name
-gregtech:gt.meta.storage.ingot:8781, oredict.blockIngotDesichalkos.name
 gregtech:gt.meta.storage.ingot:8782, oredict.blockIngotTartarite.name
 gregtech:gt.meta.storage.ingot:8784, oredict.blockIngotAdamantine.name
 gregtech:gt.meta.storage.ingot:8790, oredict.blockIngotTrinitanium.name
-gregtech:gt.meta.storage.ingot:8791, oredict.blockIngotDraconium.name
 gregtech:gt.meta.storage.ingot:8793, oredict.blockIngotTitaniumIridium.name
 gregtech:gt.meta.storage.ingot:8794, oredict.blockIngotTitaniumAluminide.name
 gregtech:gt.meta.storage.ingot:8795, oredict.blockIngotBedrockium.name
@@ -5789,7 +5720,6 @@ gregtech:gt.meta.storage.plate:8281, oredict.blockPlateWaxSoulful.name
 gregtech:gt.meta.storage.plate:8334, oredict.blockPlateCoal.name
 gregtech:gt.meta.storage.plate:8336, oredict.blockPlateCharcoal.name
 gregtech:gt.meta.storage.plate:8337, oredict.blockPlateLignite.name
-gregtech:gt.meta.storage.plate:8343, oredict.blockPlateForce.name
 gregtech:gt.meta.storage.plate:8349, oredict.blockPlateCoalCoke.name
 gregtech:gt.meta.storage.plate:8362, oredict.blockPlateAnthracite.name
 gregtech:gt.meta.storage.plate:8363, oredict.blockPlatePrismane.name
@@ -5844,16 +5774,12 @@ gregtech:gt.meta.storage.plate:8644, oredict.blockPlateIronCompressed.name
 gregtech:gt.meta.storage.plate:8645, oredict.blockPlateIronMagnetic.name
 gregtech:gt.meta.storage.plate:8646, oredict.blockPlateSteelMagnetic.name
 gregtech:gt.meta.storage.plate:8647, oredict.blockPlateNeodymiumMagnetic.name
-gregtech:gt.meta.storage.plate:8648, oredict.blockPlateDarkIron.name
 gregtech:gt.meta.storage.plate:8649, oredict.blockPlateMeteoricIron.name
 gregtech:gt.meta.storage.plate:8650, oredict.blockPlateMeteoricSteel.name
 gregtech:gt.meta.storage.plate:8651, oredict.blockPlateSteelGalvanized.name
 gregtech:gt.meta.storage.plate:8652, oredict.blockPlateTungstenSintered.name
 gregtech:gt.meta.storage.plate:8653, oredict.blockPlateVanadiumSteel.name
 gregtech:gt.meta.storage.plate:8654, oredict.blockPlateTitaniumGold.name
-gregtech:gt.meta.storage.plate:8657, oredict.blockPlatePurpleAlloy.name
-gregtech:gt.meta.storage.plate:8658, oredict.blockPlateElectrotineAlloy.name
-gregtech:gt.meta.storage.plate:8659, oredict.blockPlateBlueAlloy.name
 gregtech:gt.meta.storage.plate:8660, oredict.blockPlateRedAlloy.name
 gregtech:gt.meta.storage.plate:8661, oredict.blockPlateInvar.name
 gregtech:gt.meta.storage.plate:8662, oredict.blockPlateConstantan.name
@@ -5880,17 +5806,14 @@ gregtech:gt.meta.storage.plate:8689, oredict.blockPlateNiobiumTitanium.name
 gregtech:gt.meta.storage.plate:8700, oredict.blockPlateAluminiumBrass.name
 gregtech:gt.meta.storage.plate:8701, oredict.blockPlateAredrite.name
 gregtech:gt.meta.storage.plate:8702, oredict.blockPlateAlumite.name
-gregtech:gt.meta.storage.plate:8703, oredict.blockPlateManyullyn.name
 gregtech:gt.meta.storage.plate:8704, oredict.blockPlateVibraniumSteel.name
 gregtech:gt.meta.storage.plate:8705, oredict.blockPlateVibraniumSilver.name
 gregtech:gt.meta.storage.plate:8706, oredict.blockPlateVibramantium.name
-gregtech:gt.meta.storage.plate:8707, oredict.blockPlateArdite.name
 gregtech:gt.meta.storage.plate:8708, oredict.blockPlateSignalum.name
 gregtech:gt.meta.storage.plate:8709, oredict.blockPlateLumium.name
 gregtech:gt.meta.storage.plate:8710, oredict.blockPlateEnderium.name
 gregtech:gt.meta.storage.plate:8711, oredict.blockPlateElectrumFlux.name
 gregtech:gt.meta.storage.plate:8718, oredict.blockPlateBedrockHSLAAlloy.name
-gregtech:gt.meta.storage.plate:8719, oredict.blockPlateOsmium.name
 gregtech:gt.meta.storage.plate:8725, oredict.blockPlatePulsatingIron.name
 gregtech:gt.meta.storage.plate:8726, oredict.blockPlateVibrantAlloy.name
 gregtech:gt.meta.storage.plate:8727, oredict.blockPlateConductiveIron.name
@@ -5902,7 +5825,6 @@ gregtech:gt.meta.storage.plate:8732, oredict.blockPlateSoularium.name
 gregtech:gt.meta.storage.plate:8733, oredict.blockPlateRedstoneAlloy.name
 gregtech:gt.meta.storage.plate:8734, oredict.blockPlateSpectreIron.name
 gregtech:gt.meta.storage.plate:8736, oredict.blockPlateEndium.name
-gregtech:gt.meta.storage.plate:8737, oredict.blockPlateNikolineAlloy.name
 gregtech:gt.meta.storage.plate:8744, oredict.blockPlateAncientDebris.name
 gregtech:gt.meta.storage.plate:8745, oredict.blockPlateNetherite.name
 gregtech:gt.meta.storage.plate:8746, oredict.blockPlateNetherizedDiamond.name
@@ -5910,14 +5832,10 @@ gregtech:gt.meta.storage.plate:8747, oredict.blockPlateEfrine.name
 gregtech:gt.meta.storage.plate:8751, oredict.blockPlateDuranium.name
 gregtech:gt.meta.storage.plate:8752, oredict.blockPlateTritanium.name
 gregtech:gt.meta.storage.plate:8756, oredict.blockPlateDuralumin.name
-gregtech:gt.meta.storage.plate:8763, oredict.blockPlateMeutoite.name
 gregtech:gt.meta.storage.plate:8766, oredict.blockPlateHSLATungstenAlloy.name
-gregtech:gt.meta.storage.plate:8773, oredict.blockPlateEximite.name
-gregtech:gt.meta.storage.plate:8781, oredict.blockPlateDesichalkos.name
 gregtech:gt.meta.storage.plate:8782, oredict.blockPlateTartarite.name
 gregtech:gt.meta.storage.plate:8784, oredict.blockPlateAdamantine.name
 gregtech:gt.meta.storage.plate:8790, oredict.blockPlateTrinitanium.name
-gregtech:gt.meta.storage.plate:8791, oredict.blockPlateDraconium.name
 gregtech:gt.meta.storage.plate:8793, oredict.blockPlateTitaniumIridium.name
 gregtech:gt.meta.storage.plate:8794, oredict.blockPlateTitaniumAluminide.name
 gregtech:gt.meta.storage.plate:8795, oredict.blockPlateBedrockium.name
@@ -6103,7 +6021,6 @@ gregtech:gt.meta.storage.plateGem:8312, oredict.blockPlateGemOpal.name
 gregtech:gt.meta.storage.plateGem:8313, oredict.blockPlateGemAmethyst.name
 gregtech:gt.meta.storage.plateGem:8314, oredict.blockPlateGemOrangeSapphire.name
 gregtech:gt.meta.storage.plateGem:8315, oredict.blockPlateGemYellowSapphire.name
-gregtech:gt.meta.storage.plateGem:8316, oredict.blockPlateGemVinteum.name
 gregtech:gt.meta.storage.plateGem:8317, oredict.blockPlateGemDilithium.name
 gregtech:gt.meta.storage.plateGem:8318, oredict.blockPlateGemEnderPearl.name
 gregtech:gt.meta.storage.plateGem:8319, oredict.blockPlateGemEnderEye.name
@@ -6123,19 +6040,11 @@ gregtech:gt.meta.storage.plateGem:8334, oredict.blockPlateGemCoal.name
 gregtech:gt.meta.storage.plateGem:8336, oredict.blockPlateGemCharcoal.name
 gregtech:gt.meta.storage.plateGem:8337, oredict.blockPlateGemLignite.name
 gregtech:gt.meta.storage.plateGem:8338, oredict.blockPlateGemMonazite.name
-gregtech:gt.meta.storage.plateGem:8340, oredict.blockPlateGemNikolite.name
 gregtech:gt.meta.storage.plateGem:8341, oredict.blockPlateGemGlowstone.name
-gregtech:gt.meta.storage.plateGem:8343, oredict.blockPlateGemForce.name
 gregtech:gt.meta.storage.plateGem:8346, oredict.blockPlateGemNetherQuartz.name
 gregtech:gt.meta.storage.plateGem:8347, oredict.blockPlateGemCertusQuartz.name
 gregtech:gt.meta.storage.plateGem:8348, oredict.blockPlateGemChargedCertusQuartz.name
 gregtech:gt.meta.storage.plateGem:8349, oredict.blockPlateGemCoalCoke.name
-gregtech:gt.meta.storage.plateGem:8352, oredict.blockPlateGemInfusedAir.name
-gregtech:gt.meta.storage.plateGem:8353, oredict.blockPlateGemInfusedFire.name
-gregtech:gt.meta.storage.plateGem:8354, oredict.blockPlateGemInfusedEarth.name
-gregtech:gt.meta.storage.plateGem:8355, oredict.blockPlateGemInfusedWater.name
-gregtech:gt.meta.storage.plateGem:8356, oredict.blockPlateGemInfusedEntropy.name
-gregtech:gt.meta.storage.plateGem:8357, oredict.blockPlateGemInfusedOrder.name
 gregtech:gt.meta.storage.plateGem:8362, oredict.blockPlateGemAnthracite.name
 gregtech:gt.meta.storage.plateGem:8363, oredict.blockPlateGemPrismane.name
 gregtech:gt.meta.storage.plateGem:8364, oredict.blockPlateGemLonsdaleite.name
@@ -6185,13 +6094,9 @@ gregtech:gt.meta.storage.plateGem:8448, oredict.blockPlateGemGreenAventurine.nam
 gregtech:gt.meta.storage.plateGem:8449, oredict.blockPlateGemBlackAventurine.name
 gregtech:gt.meta.storage.plateGem:8450, oredict.blockPlateGemBlueAventurine.name
 gregtech:gt.meta.storage.plateGem:8451, oredict.blockPlateGemRedAventurine.name
-gregtech:gt.meta.storage.plateGem:8452, oredict.blockPlateGemMoonstone.name
-gregtech:gt.meta.storage.plateGem:8453, oredict.blockPlateGemSunstone.name
-gregtech:gt.meta.storage.plateGem:8454, oredict.blockPlateGemChimerite.name
 gregtech:gt.meta.storage.plateGem:8456, oredict.blockPlateGemGloomstone.name
 gregtech:gt.meta.storage.plateGem:8457, oredict.blockPlateGemVoidQuartz.name
 gregtech:gt.meta.storage.plateGem:8733, oredict.blockPlateGemRedstoneAlloy.name
-gregtech:gt.meta.storage.plateGem:8737, oredict.blockPlateGemNikolineAlloy.name
 gregtech:gt.meta.storage.plateGem:8746, oredict.blockPlateGemNetherizedDiamond.name
 gregtech:gt.meta.storage.plateGem:9101, oredict.blockPlateGemAlmandine.name
 gregtech:gt.meta.storage.plateGem:9102, oredict.blockPlateGemAndradite.name
@@ -6331,7 +6236,6 @@ gregtech:gt.meta.storage.solid:8281, oredict.blockSolidWaxSoulful.name
 gregtech:gt.meta.storage.solid:8334, oredict.blockSolidCoal.name
 gregtech:gt.meta.storage.solid:8336, oredict.blockSolidCharcoal.name
 gregtech:gt.meta.storage.solid:8337, oredict.blockSolidLignite.name
-gregtech:gt.meta.storage.solid:8343, oredict.blockSolidForce.name
 gregtech:gt.meta.storage.solid:8349, oredict.blockSolidCoalCoke.name
 gregtech:gt.meta.storage.solid:8360, oredict.blockSolidPeat.name
 gregtech:gt.meta.storage.solid:8361, oredict.blockSolidPeatBituminous.name
@@ -6371,16 +6275,12 @@ gregtech:gt.meta.storage.solid:8644, oredict.blockSolidIronCompressed.name
 gregtech:gt.meta.storage.solid:8645, oredict.blockSolidIronMagnetic.name
 gregtech:gt.meta.storage.solid:8646, oredict.blockSolidSteelMagnetic.name
 gregtech:gt.meta.storage.solid:8647, oredict.blockSolidNeodymiumMagnetic.name
-gregtech:gt.meta.storage.solid:8648, oredict.blockSolidDarkIron.name
 gregtech:gt.meta.storage.solid:8649, oredict.blockSolidMeteoricIron.name
 gregtech:gt.meta.storage.solid:8650, oredict.blockSolidMeteoricSteel.name
 gregtech:gt.meta.storage.solid:8651, oredict.blockSolidSteelGalvanized.name
 gregtech:gt.meta.storage.solid:8652, oredict.blockSolidTungstenSintered.name
 gregtech:gt.meta.storage.solid:8653, oredict.blockSolidVanadiumSteel.name
 gregtech:gt.meta.storage.solid:8654, oredict.blockSolidTitaniumGold.name
-gregtech:gt.meta.storage.solid:8657, oredict.blockSolidPurpleAlloy.name
-gregtech:gt.meta.storage.solid:8658, oredict.blockSolidElectrotineAlloy.name
-gregtech:gt.meta.storage.solid:8659, oredict.blockSolidBlueAlloy.name
 gregtech:gt.meta.storage.solid:8660, oredict.blockSolidRedAlloy.name
 gregtech:gt.meta.storage.solid:8661, oredict.blockSolidInvar.name
 gregtech:gt.meta.storage.solid:8662, oredict.blockSolidConstantan.name
@@ -6407,17 +6307,14 @@ gregtech:gt.meta.storage.solid:8689, oredict.blockSolidNiobiumTitanium.name
 gregtech:gt.meta.storage.solid:8700, oredict.blockSolidAluminiumBrass.name
 gregtech:gt.meta.storage.solid:8701, oredict.blockSolidAredrite.name
 gregtech:gt.meta.storage.solid:8702, oredict.blockSolidAlumite.name
-gregtech:gt.meta.storage.solid:8703, oredict.blockSolidManyullyn.name
 gregtech:gt.meta.storage.solid:8704, oredict.blockSolidVibraniumSteel.name
 gregtech:gt.meta.storage.solid:8705, oredict.blockSolidVibraniumSilver.name
 gregtech:gt.meta.storage.solid:8706, oredict.blockSolidVibramantium.name
-gregtech:gt.meta.storage.solid:8707, oredict.blockSolidArdite.name
 gregtech:gt.meta.storage.solid:8708, oredict.blockSolidSignalum.name
 gregtech:gt.meta.storage.solid:8709, oredict.blockSolidLumium.name
 gregtech:gt.meta.storage.solid:8710, oredict.blockSolidEnderium.name
 gregtech:gt.meta.storage.solid:8711, oredict.blockSolidElectrumFlux.name
 gregtech:gt.meta.storage.solid:8718, oredict.blockSolidBedrockHSLAAlloy.name
-gregtech:gt.meta.storage.solid:8719, oredict.blockSolidOsmium.name
 gregtech:gt.meta.storage.solid:8725, oredict.blockSolidPulsatingIron.name
 gregtech:gt.meta.storage.solid:8726, oredict.blockSolidVibrantAlloy.name
 gregtech:gt.meta.storage.solid:8727, oredict.blockSolidConductiveIron.name
@@ -6429,7 +6326,6 @@ gregtech:gt.meta.storage.solid:8732, oredict.blockSolidSoularium.name
 gregtech:gt.meta.storage.solid:8733, oredict.blockSolidRedstoneAlloy.name
 gregtech:gt.meta.storage.solid:8734, oredict.blockSolidSpectreIron.name
 gregtech:gt.meta.storage.solid:8736, oredict.blockSolidEndium.name
-gregtech:gt.meta.storage.solid:8737, oredict.blockSolidNikolineAlloy.name
 gregtech:gt.meta.storage.solid:8744, oredict.blockSolidAncientDebris.name
 gregtech:gt.meta.storage.solid:8745, oredict.blockSolidNetherite.name
 gregtech:gt.meta.storage.solid:8746, oredict.blockSolidNetherizedDiamond.name
@@ -6437,14 +6333,10 @@ gregtech:gt.meta.storage.solid:8747, oredict.blockSolidEfrine.name
 gregtech:gt.meta.storage.solid:8751, oredict.blockSolidDuranium.name
 gregtech:gt.meta.storage.solid:8752, oredict.blockSolidTritanium.name
 gregtech:gt.meta.storage.solid:8756, oredict.blockSolidDuralumin.name
-gregtech:gt.meta.storage.solid:8763, oredict.blockSolidMeutoite.name
 gregtech:gt.meta.storage.solid:8766, oredict.blockSolidHSLATungstenAlloy.name
-gregtech:gt.meta.storage.solid:8773, oredict.blockSolidEximite.name
-gregtech:gt.meta.storage.solid:8781, oredict.blockSolidDesichalkos.name
 gregtech:gt.meta.storage.solid:8782, oredict.blockSolidTartarite.name
 gregtech:gt.meta.storage.solid:8784, oredict.blockSolidAdamantine.name
 gregtech:gt.meta.storage.solid:8790, oredict.blockSolidTrinitanium.name
-gregtech:gt.meta.storage.solid:8791, oredict.blockSolidDraconium.name
 gregtech:gt.meta.storage.solid:8793, oredict.blockSolidTitaniumIridium.name
 gregtech:gt.meta.storage.solid:8794, oredict.blockSolidTitaniumAluminide.name
 gregtech:gt.meta.storage.solid:8795, oredict.blockSolidBedrockium.name
@@ -6551,7 +6443,6 @@ gregtech:gt.meta.machine:8644, oredict.casingMachineIronCompressed.name
 gregtech:gt.meta.machine:8645, oredict.casingMachineIronMagnetic.name
 gregtech:gt.meta.machine:8646, oredict.casingMachineSteelMagnetic.name
 gregtech:gt.meta.machine:8647, oredict.casingMachineNeodymiumMagnetic.name
-gregtech:gt.meta.machine:8648, oredict.casingMachineDarkIron.name
 gregtech:gt.meta.machine:8649, oredict.casingMachineMeteoricIron.name
 gregtech:gt.meta.machine:8650, oredict.casingMachineMeteoricSteel.name
 gregtech:gt.meta.machine:8651, oredict.casingMachineSteelGalvanized.name
@@ -6577,17 +6468,14 @@ gregtech:gt.meta.machine:8685, oredict.casingMachineChromiumDioxide.name
 gregtech:gt.meta.machine:8700, oredict.casingMachineAluminiumBrass.name
 gregtech:gt.meta.machine:8701, oredict.casingMachineAredrite.name
 gregtech:gt.meta.machine:8702, oredict.casingMachineAlumite.name
-gregtech:gt.meta.machine:8703, oredict.casingMachineManyullyn.name
 gregtech:gt.meta.machine:8704, oredict.casingMachineVibraniumSteel.name
 gregtech:gt.meta.machine:8705, oredict.casingMachineVibraniumSilver.name
 gregtech:gt.meta.machine:8706, oredict.casingMachineVibramantium.name
-gregtech:gt.meta.machine:8707, oredict.casingMachineArdite.name
 gregtech:gt.meta.machine:8708, oredict.casingMachineSignalum.name
 gregtech:gt.meta.machine:8709, oredict.casingMachineLumium.name
 gregtech:gt.meta.machine:8710, oredict.casingMachineEnderium.name
 gregtech:gt.meta.machine:8711, oredict.casingMachineElectrumFlux.name
 gregtech:gt.meta.machine:8718, oredict.casingMachineBedrockHSLAAlloy.name
-gregtech:gt.meta.machine:8719, oredict.casingMachineOsmium.name
 gregtech:gt.meta.machine:8725, oredict.casingMachinePulsatingIron.name
 gregtech:gt.meta.machine:8726, oredict.casingMachineVibrantAlloy.name
 gregtech:gt.meta.machine:8727, oredict.casingMachineConductiveIron.name
@@ -6604,14 +6492,10 @@ gregtech:gt.meta.machine:8747, oredict.casingMachineEfrine.name
 gregtech:gt.meta.machine:8751, oredict.casingMachineDuranium.name
 gregtech:gt.meta.machine:8752, oredict.casingMachineTritanium.name
 gregtech:gt.meta.machine:8756, oredict.casingMachineDuralumin.name
-gregtech:gt.meta.machine:8763, oredict.casingMachineMeutoite.name
 gregtech:gt.meta.machine:8766, oredict.casingMachineHSLATungstenAlloy.name
-gregtech:gt.meta.machine:8773, oredict.casingMachineEximite.name
-gregtech:gt.meta.machine:8781, oredict.casingMachineDesichalkos.name
 gregtech:gt.meta.machine:8782, oredict.casingMachineTartarite.name
 gregtech:gt.meta.machine:8784, oredict.casingMachineAdamantine.name
 gregtech:gt.meta.machine:8790, oredict.casingMachineTrinitanium.name
-gregtech:gt.meta.machine:8791, oredict.casingMachineDraconium.name
 gregtech:gt.meta.machine:8793, oredict.casingMachineTitaniumIridium.name
 gregtech:gt.meta.machine:8794, oredict.casingMachineTitaniumAluminide.name
 gregtech:gt.meta.machine:8795, oredict.casingMachineBedrockium.name
@@ -6698,7 +6582,6 @@ gregtech:gt.meta.machine.double:8644, oredict.casingMachineDoubleIronCompressed.
 gregtech:gt.meta.machine.double:8645, oredict.casingMachineDoubleIronMagnetic.name
 gregtech:gt.meta.machine.double:8646, oredict.casingMachineDoubleSteelMagnetic.name
 gregtech:gt.meta.machine.double:8647, oredict.casingMachineDoubleNeodymiumMagnetic.name
-gregtech:gt.meta.machine.double:8648, oredict.casingMachineDoubleDarkIron.name
 gregtech:gt.meta.machine.double:8649, oredict.casingMachineDoubleMeteoricIron.name
 gregtech:gt.meta.machine.double:8650, oredict.casingMachineDoubleMeteoricSteel.name
 gregtech:gt.meta.machine.double:8651, oredict.casingMachineDoubleSteelGalvanized.name
@@ -6724,17 +6607,14 @@ gregtech:gt.meta.machine.double:8685, oredict.casingMachineDoubleChromiumDioxide
 gregtech:gt.meta.machine.double:8700, oredict.casingMachineDoubleAluminiumBrass.name
 gregtech:gt.meta.machine.double:8701, oredict.casingMachineDoubleAredrite.name
 gregtech:gt.meta.machine.double:8702, oredict.casingMachineDoubleAlumite.name
-gregtech:gt.meta.machine.double:8703, oredict.casingMachineDoubleManyullyn.name
 gregtech:gt.meta.machine.double:8704, oredict.casingMachineDoubleVibraniumSteel.name
 gregtech:gt.meta.machine.double:8705, oredict.casingMachineDoubleVibraniumSilver.name
 gregtech:gt.meta.machine.double:8706, oredict.casingMachineDoubleVibramantium.name
-gregtech:gt.meta.machine.double:8707, oredict.casingMachineDoubleArdite.name
 gregtech:gt.meta.machine.double:8708, oredict.casingMachineDoubleSignalum.name
 gregtech:gt.meta.machine.double:8709, oredict.casingMachineDoubleLumium.name
 gregtech:gt.meta.machine.double:8710, oredict.casingMachineDoubleEnderium.name
 gregtech:gt.meta.machine.double:8711, oredict.casingMachineDoubleElectrumFlux.name
 gregtech:gt.meta.machine.double:8718, oredict.casingMachineDoubleBedrockHSLAAlloy.name
-gregtech:gt.meta.machine.double:8719, oredict.casingMachineDoubleOsmium.name
 gregtech:gt.meta.machine.double:8725, oredict.casingMachineDoublePulsatingIron.name
 gregtech:gt.meta.machine.double:8726, oredict.casingMachineDoubleVibrantAlloy.name
 gregtech:gt.meta.machine.double:8727, oredict.casingMachineDoubleConductiveIron.name
@@ -6751,14 +6631,10 @@ gregtech:gt.meta.machine.double:8747, oredict.casingMachineDoubleEfrine.name
 gregtech:gt.meta.machine.double:8751, oredict.casingMachineDoubleDuranium.name
 gregtech:gt.meta.machine.double:8752, oredict.casingMachineDoubleTritanium.name
 gregtech:gt.meta.machine.double:8756, oredict.casingMachineDoubleDuralumin.name
-gregtech:gt.meta.machine.double:8763, oredict.casingMachineDoubleMeutoite.name
 gregtech:gt.meta.machine.double:8766, oredict.casingMachineDoubleHSLATungstenAlloy.name
-gregtech:gt.meta.machine.double:8773, oredict.casingMachineDoubleEximite.name
-gregtech:gt.meta.machine.double:8781, oredict.casingMachineDoubleDesichalkos.name
 gregtech:gt.meta.machine.double:8782, oredict.casingMachineDoubleTartarite.name
 gregtech:gt.meta.machine.double:8784, oredict.casingMachineDoubleAdamantine.name
 gregtech:gt.meta.machine.double:8790, oredict.casingMachineDoubleTrinitanium.name
-gregtech:gt.meta.machine.double:8791, oredict.casingMachineDoubleDraconium.name
 gregtech:gt.meta.machine.double:8793, oredict.casingMachineDoubleTitaniumIridium.name
 gregtech:gt.meta.machine.double:8794, oredict.casingMachineDoubleTitaniumAluminide.name
 gregtech:gt.meta.machine.double:8795, oredict.casingMachineDoubleBedrockium.name
@@ -6845,7 +6721,6 @@ gregtech:gt.meta.machine.quadruple:8644, oredict.casingMachineQuadrupleIronCompr
 gregtech:gt.meta.machine.quadruple:8645, oredict.casingMachineQuadrupleIronMagnetic.name
 gregtech:gt.meta.machine.quadruple:8646, oredict.casingMachineQuadrupleSteelMagnetic.name
 gregtech:gt.meta.machine.quadruple:8647, oredict.casingMachineQuadrupleNeodymiumMagnetic.name
-gregtech:gt.meta.machine.quadruple:8648, oredict.casingMachineQuadrupleDarkIron.name
 gregtech:gt.meta.machine.quadruple:8649, oredict.casingMachineQuadrupleMeteoricIron.name
 gregtech:gt.meta.machine.quadruple:8650, oredict.casingMachineQuadrupleMeteoricSteel.name
 gregtech:gt.meta.machine.quadruple:8651, oredict.casingMachineQuadrupleSteelGalvanized.name
@@ -6871,17 +6746,14 @@ gregtech:gt.meta.machine.quadruple:8685, oredict.casingMachineQuadrupleChromiumD
 gregtech:gt.meta.machine.quadruple:8700, oredict.casingMachineQuadrupleAluminiumBrass.name
 gregtech:gt.meta.machine.quadruple:8701, oredict.casingMachineQuadrupleAredrite.name
 gregtech:gt.meta.machine.quadruple:8702, oredict.casingMachineQuadrupleAlumite.name
-gregtech:gt.meta.machine.quadruple:8703, oredict.casingMachineQuadrupleManyullyn.name
 gregtech:gt.meta.machine.quadruple:8704, oredict.casingMachineQuadrupleVibraniumSteel.name
 gregtech:gt.meta.machine.quadruple:8705, oredict.casingMachineQuadrupleVibraniumSilver.name
 gregtech:gt.meta.machine.quadruple:8706, oredict.casingMachineQuadrupleVibramantium.name
-gregtech:gt.meta.machine.quadruple:8707, oredict.casingMachineQuadrupleArdite.name
 gregtech:gt.meta.machine.quadruple:8708, oredict.casingMachineQuadrupleSignalum.name
 gregtech:gt.meta.machine.quadruple:8709, oredict.casingMachineQuadrupleLumium.name
 gregtech:gt.meta.machine.quadruple:8710, oredict.casingMachineQuadrupleEnderium.name
 gregtech:gt.meta.machine.quadruple:8711, oredict.casingMachineQuadrupleElectrumFlux.name
 gregtech:gt.meta.machine.quadruple:8718, oredict.casingMachineQuadrupleBedrockHSLAAlloy.name
-gregtech:gt.meta.machine.quadruple:8719, oredict.casingMachineQuadrupleOsmium.name
 gregtech:gt.meta.machine.quadruple:8725, oredict.casingMachineQuadruplePulsatingIron.name
 gregtech:gt.meta.machine.quadruple:8726, oredict.casingMachineQuadrupleVibrantAlloy.name
 gregtech:gt.meta.machine.quadruple:8727, oredict.casingMachineQuadrupleConductiveIron.name
@@ -6898,14 +6770,10 @@ gregtech:gt.meta.machine.quadruple:8747, oredict.casingMachineQuadrupleEfrine.na
 gregtech:gt.meta.machine.quadruple:8751, oredict.casingMachineQuadrupleDuranium.name
 gregtech:gt.meta.machine.quadruple:8752, oredict.casingMachineQuadrupleTritanium.name
 gregtech:gt.meta.machine.quadruple:8756, oredict.casingMachineQuadrupleDuralumin.name
-gregtech:gt.meta.machine.quadruple:8763, oredict.casingMachineQuadrupleMeutoite.name
 gregtech:gt.meta.machine.quadruple:8766, oredict.casingMachineQuadrupleHSLATungstenAlloy.name
-gregtech:gt.meta.machine.quadruple:8773, oredict.casingMachineQuadrupleEximite.name
-gregtech:gt.meta.machine.quadruple:8781, oredict.casingMachineQuadrupleDesichalkos.name
 gregtech:gt.meta.machine.quadruple:8782, oredict.casingMachineQuadrupleTartarite.name
 gregtech:gt.meta.machine.quadruple:8784, oredict.casingMachineQuadrupleAdamantine.name
 gregtech:gt.meta.machine.quadruple:8790, oredict.casingMachineQuadrupleTrinitanium.name
-gregtech:gt.meta.machine.quadruple:8791, oredict.casingMachineQuadrupleDraconium.name
 gregtech:gt.meta.machine.quadruple:8793, oredict.casingMachineQuadrupleTitaniumIridium.name
 gregtech:gt.meta.machine.quadruple:8794, oredict.casingMachineQuadrupleTitaniumAluminide.name
 gregtech:gt.meta.machine.quadruple:8795, oredict.casingMachineQuadrupleBedrockium.name
@@ -6992,7 +6860,6 @@ gregtech:gt.meta.machine.dense:8644, oredict.casingMachineDenseIronCompressed.na
 gregtech:gt.meta.machine.dense:8645, oredict.casingMachineDenseIronMagnetic.name
 gregtech:gt.meta.machine.dense:8646, oredict.casingMachineDenseSteelMagnetic.name
 gregtech:gt.meta.machine.dense:8647, oredict.casingMachineDenseNeodymiumMagnetic.name
-gregtech:gt.meta.machine.dense:8648, oredict.casingMachineDenseDarkIron.name
 gregtech:gt.meta.machine.dense:8649, oredict.casingMachineDenseMeteoricIron.name
 gregtech:gt.meta.machine.dense:8650, oredict.casingMachineDenseMeteoricSteel.name
 gregtech:gt.meta.machine.dense:8651, oredict.casingMachineDenseSteelGalvanized.name
@@ -7018,17 +6885,14 @@ gregtech:gt.meta.machine.dense:8685, oredict.casingMachineDenseChromiumDioxide.n
 gregtech:gt.meta.machine.dense:8700, oredict.casingMachineDenseAluminiumBrass.name
 gregtech:gt.meta.machine.dense:8701, oredict.casingMachineDenseAredrite.name
 gregtech:gt.meta.machine.dense:8702, oredict.casingMachineDenseAlumite.name
-gregtech:gt.meta.machine.dense:8703, oredict.casingMachineDenseManyullyn.name
 gregtech:gt.meta.machine.dense:8704, oredict.casingMachineDenseVibraniumSteel.name
 gregtech:gt.meta.machine.dense:8705, oredict.casingMachineDenseVibraniumSilver.name
 gregtech:gt.meta.machine.dense:8706, oredict.casingMachineDenseVibramantium.name
-gregtech:gt.meta.machine.dense:8707, oredict.casingMachineDenseArdite.name
 gregtech:gt.meta.machine.dense:8708, oredict.casingMachineDenseSignalum.name
 gregtech:gt.meta.machine.dense:8709, oredict.casingMachineDenseLumium.name
 gregtech:gt.meta.machine.dense:8710, oredict.casingMachineDenseEnderium.name
 gregtech:gt.meta.machine.dense:8711, oredict.casingMachineDenseElectrumFlux.name
 gregtech:gt.meta.machine.dense:8718, oredict.casingMachineDenseBedrockHSLAAlloy.name
-gregtech:gt.meta.machine.dense:8719, oredict.casingMachineDenseOsmium.name
 gregtech:gt.meta.machine.dense:8725, oredict.casingMachineDensePulsatingIron.name
 gregtech:gt.meta.machine.dense:8726, oredict.casingMachineDenseVibrantAlloy.name
 gregtech:gt.meta.machine.dense:8727, oredict.casingMachineDenseConductiveIron.name
@@ -7045,14 +6909,10 @@ gregtech:gt.meta.machine.dense:8747, oredict.casingMachineDenseEfrine.name
 gregtech:gt.meta.machine.dense:8751, oredict.casingMachineDenseDuranium.name
 gregtech:gt.meta.machine.dense:8752, oredict.casingMachineDenseTritanium.name
 gregtech:gt.meta.machine.dense:8756, oredict.casingMachineDenseDuralumin.name
-gregtech:gt.meta.machine.dense:8763, oredict.casingMachineDenseMeutoite.name
 gregtech:gt.meta.machine.dense:8766, oredict.casingMachineDenseHSLATungstenAlloy.name
-gregtech:gt.meta.machine.dense:8773, oredict.casingMachineDenseEximite.name
-gregtech:gt.meta.machine.dense:8781, oredict.casingMachineDenseDesichalkos.name
 gregtech:gt.meta.machine.dense:8782, oredict.casingMachineDenseTartarite.name
 gregtech:gt.meta.machine.dense:8784, oredict.casingMachineDenseAdamantine.name
 gregtech:gt.meta.machine.dense:8790, oredict.casingMachineDenseTrinitanium.name
-gregtech:gt.meta.machine.dense:8791, oredict.casingMachineDenseDraconium.name
 gregtech:gt.meta.machine.dense:8793, oredict.casingMachineDenseTitaniumIridium.name
 gregtech:gt.meta.machine.dense:8794, oredict.casingMachineDenseTitaniumAluminide.name
 gregtech:gt.meta.machine.dense:8795, oredict.casingMachineDenseBedrockium.name
@@ -7204,7 +7064,6 @@ gregtech:gt.meta.crate.64.raw:8312, oredict.crateGt64RawOpal.name
 gregtech:gt.meta.crate.64.raw:8313, oredict.crateGt64RawAmethyst.name
 gregtech:gt.meta.crate.64.raw:8314, oredict.crateGt64RawOrangeSapphire.name
 gregtech:gt.meta.crate.64.raw:8315, oredict.crateGt64RawYellowSapphire.name
-gregtech:gt.meta.crate.64.raw:8316, oredict.crateGt64RawVinteum.name
 gregtech:gt.meta.crate.64.raw:8317, oredict.crateGt64RawDilithium.name
 gregtech:gt.meta.crate.64.raw:8320, oredict.crateGt64RawNetherStar.name
 gregtech:gt.meta.crate.64.raw:8321, oredict.crateGt64RawJade.name
@@ -7222,19 +7081,11 @@ gregtech:gt.meta.crate.64.raw:8334, oredict.crateGt64RawCoal.name
 gregtech:gt.meta.crate.64.raw:8336, oredict.crateGt64RawCharcoal.name
 gregtech:gt.meta.crate.64.raw:8337, oredict.crateGt64RawLignite.name
 gregtech:gt.meta.crate.64.raw:8338, oredict.crateGt64RawMonazite.name
-gregtech:gt.meta.crate.64.raw:8340, oredict.crateGt64RawNikolite.name
 gregtech:gt.meta.crate.64.raw:8341, oredict.crateGt64RawGlowstone.name
-gregtech:gt.meta.crate.64.raw:8343, oredict.crateGt64RawForce.name
 gregtech:gt.meta.crate.64.raw:8346, oredict.crateGt64RawNetherQuartz.name
 gregtech:gt.meta.crate.64.raw:8347, oredict.crateGt64RawCertusQuartz.name
 gregtech:gt.meta.crate.64.raw:8348, oredict.crateGt64RawChargedCertusQuartz.name
 gregtech:gt.meta.crate.64.raw:8349, oredict.crateGt64RawCoalCoke.name
-gregtech:gt.meta.crate.64.raw:8352, oredict.crateGt64RawInfusedAir.name
-gregtech:gt.meta.crate.64.raw:8353, oredict.crateGt64RawInfusedFire.name
-gregtech:gt.meta.crate.64.raw:8354, oredict.crateGt64RawInfusedEarth.name
-gregtech:gt.meta.crate.64.raw:8355, oredict.crateGt64RawInfusedWater.name
-gregtech:gt.meta.crate.64.raw:8356, oredict.crateGt64RawInfusedEntropy.name
-gregtech:gt.meta.crate.64.raw:8357, oredict.crateGt64RawInfusedOrder.name
 gregtech:gt.meta.crate.64.raw:8362, oredict.crateGt64RawAnthracite.name
 gregtech:gt.meta.crate.64.raw:8363, oredict.crateGt64RawPrismane.name
 gregtech:gt.meta.crate.64.raw:8364, oredict.crateGt64RawLonsdaleite.name
@@ -7282,31 +7133,22 @@ gregtech:gt.meta.crate.64.raw:8448, oredict.crateGt64RawGreenAventurine.name
 gregtech:gt.meta.crate.64.raw:8449, oredict.crateGt64RawBlackAventurine.name
 gregtech:gt.meta.crate.64.raw:8450, oredict.crateGt64RawBlueAventurine.name
 gregtech:gt.meta.crate.64.raw:8451, oredict.crateGt64RawRedAventurine.name
-gregtech:gt.meta.crate.64.raw:8452, oredict.crateGt64RawMoonstone.name
-gregtech:gt.meta.crate.64.raw:8453, oredict.crateGt64RawSunstone.name
-gregtech:gt.meta.crate.64.raw:8454, oredict.crateGt64RawChimerite.name
 gregtech:gt.meta.crate.64.raw:8455, oredict.crateGt64RawClayRed.name
 gregtech:gt.meta.crate.64.raw:8456, oredict.crateGt64RawGloomstone.name
 gregtech:gt.meta.crate.64.raw:8457, oredict.crateGt64RawVoidQuartz.name
 gregtech:gt.meta.crate.64.raw:8600, oredict.crateGt64RawElectrum.name
 gregtech:gt.meta.crate.64.raw:8630, oredict.crateGt64RawSteel.name
 gregtech:gt.meta.crate.64.raw:8642, oredict.crateGt64RawPigIron.name
-gregtech:gt.meta.crate.64.raw:8648, oredict.crateGt64RawDarkIron.name
 gregtech:gt.meta.crate.64.raw:8649, oredict.crateGt64RawMeteoricIron.name
 gregtech:gt.meta.crate.64.raw:8676, oredict.crateGt64RawAstralSilver.name
 gregtech:gt.meta.crate.64.raw:8677, oredict.crateGt64RawMidasium.name
 gregtech:gt.meta.crate.64.raw:8678, oredict.crateGt64RawMithril.name
 gregtech:gt.meta.crate.64.raw:8701, oredict.crateGt64RawAredrite.name
-gregtech:gt.meta.crate.64.raw:8707, oredict.crateGt64RawArdite.name
-gregtech:gt.meta.crate.64.raw:8719, oredict.crateGt64RawOsmium.name
 gregtech:gt.meta.crate.64.raw:8736, oredict.crateGt64RawEndium.name
 gregtech:gt.meta.crate.64.raw:8744, oredict.crateGt64RawAncientDebris.name
 gregtech:gt.meta.crate.64.raw:8747, oredict.crateGt64RawEfrine.name
 gregtech:gt.meta.crate.64.raw:8753, oredict.crateGt64RawDolamide.name
-gregtech:gt.meta.crate.64.raw:8763, oredict.crateGt64RawMeutoite.name
-gregtech:gt.meta.crate.64.raw:8773, oredict.crateGt64RawEximite.name
 gregtech:gt.meta.crate.64.raw:8784, oredict.crateGt64RawAdamantine.name
-gregtech:gt.meta.crate.64.raw:8791, oredict.crateGt64RawDraconium.name
 gregtech:gt.meta.crate.64.raw:8795, oredict.crateGt64RawBedrockium.name
 gregtech:gt.meta.crate.64.raw:9001, oredict.crateGt64RawDiatomite.name
 gregtech:gt.meta.crate.64.raw:9003, oredict.crateGt64RawBasalticMineralSand.name
@@ -7454,7 +7296,6 @@ gregtech:gt.meta.crate.64.gem:8312, oredict.crateGt64GemOpal.name
 gregtech:gt.meta.crate.64.gem:8313, oredict.crateGt64GemAmethyst.name
 gregtech:gt.meta.crate.64.gem:8314, oredict.crateGt64GemOrangeSapphire.name
 gregtech:gt.meta.crate.64.gem:8315, oredict.crateGt64GemYellowSapphire.name
-gregtech:gt.meta.crate.64.gem:8316, oredict.crateGt64GemVinteum.name
 gregtech:gt.meta.crate.64.gem:8317, oredict.crateGt64GemDilithium.name
 gregtech:gt.meta.crate.64.gem:8318, oredict.crateGt64GemEnderPearl.name
 gregtech:gt.meta.crate.64.gem:8319, oredict.crateGt64GemEnderEye.name
@@ -7474,19 +7315,11 @@ gregtech:gt.meta.crate.64.gem:8334, oredict.crateGt64GemCoal.name
 gregtech:gt.meta.crate.64.gem:8336, oredict.crateGt64GemCharcoal.name
 gregtech:gt.meta.crate.64.gem:8337, oredict.crateGt64GemLignite.name
 gregtech:gt.meta.crate.64.gem:8338, oredict.crateGt64GemMonazite.name
-gregtech:gt.meta.crate.64.gem:8340, oredict.crateGt64GemNikolite.name
 gregtech:gt.meta.crate.64.gem:8341, oredict.crateGt64GemGlowstone.name
-gregtech:gt.meta.crate.64.gem:8343, oredict.crateGt64GemForce.name
 gregtech:gt.meta.crate.64.gem:8346, oredict.crateGt64GemNetherQuartz.name
 gregtech:gt.meta.crate.64.gem:8347, oredict.crateGt64GemCertusQuartz.name
 gregtech:gt.meta.crate.64.gem:8348, oredict.crateGt64GemChargedCertusQuartz.name
 gregtech:gt.meta.crate.64.gem:8349, oredict.crateGt64GemCoalCoke.name
-gregtech:gt.meta.crate.64.gem:8352, oredict.crateGt64GemInfusedAir.name
-gregtech:gt.meta.crate.64.gem:8353, oredict.crateGt64GemInfusedFire.name
-gregtech:gt.meta.crate.64.gem:8354, oredict.crateGt64GemInfusedEarth.name
-gregtech:gt.meta.crate.64.gem:8355, oredict.crateGt64GemInfusedWater.name
-gregtech:gt.meta.crate.64.gem:8356, oredict.crateGt64GemInfusedEntropy.name
-gregtech:gt.meta.crate.64.gem:8357, oredict.crateGt64GemInfusedOrder.name
 gregtech:gt.meta.crate.64.gem:8362, oredict.crateGt64GemAnthracite.name
 gregtech:gt.meta.crate.64.gem:8363, oredict.crateGt64GemPrismane.name
 gregtech:gt.meta.crate.64.gem:8364, oredict.crateGt64GemLonsdaleite.name
@@ -7536,9 +7369,6 @@ gregtech:gt.meta.crate.64.gem:8448, oredict.crateGt64GemGreenAventurine.name
 gregtech:gt.meta.crate.64.gem:8449, oredict.crateGt64GemBlackAventurine.name
 gregtech:gt.meta.crate.64.gem:8450, oredict.crateGt64GemBlueAventurine.name
 gregtech:gt.meta.crate.64.gem:8451, oredict.crateGt64GemRedAventurine.name
-gregtech:gt.meta.crate.64.gem:8452, oredict.crateGt64GemMoonstone.name
-gregtech:gt.meta.crate.64.gem:8453, oredict.crateGt64GemSunstone.name
-gregtech:gt.meta.crate.64.gem:8454, oredict.crateGt64GemChimerite.name
 gregtech:gt.meta.crate.64.gem:8456, oredict.crateGt64GemGloomstone.name
 gregtech:gt.meta.crate.64.gem:8457, oredict.crateGt64GemVoidQuartz.name
 gregtech:gt.meta.crate.64.gem:8746, oredict.crateGt64GemNetherizedDiamond.name
@@ -7795,7 +7625,6 @@ gregtech:gt.meta.crate.64.dust:8312, oredict.crateGt64DustOpal.name
 gregtech:gt.meta.crate.64.dust:8313, oredict.crateGt64DustAmethyst.name
 gregtech:gt.meta.crate.64.dust:8314, oredict.crateGt64DustOrangeSapphire.name
 gregtech:gt.meta.crate.64.dust:8315, oredict.crateGt64DustYellowSapphire.name
-gregtech:gt.meta.crate.64.dust:8316, oredict.crateGt64DustVinteum.name
 gregtech:gt.meta.crate.64.dust:8317, oredict.crateGt64DustDilithium.name
 gregtech:gt.meta.crate.64.dust:8318, oredict.crateGt64DustEnderPearl.name
 gregtech:gt.meta.crate.64.dust:8319, oredict.crateGt64DustEnderEye.name
@@ -7816,19 +7645,11 @@ gregtech:gt.meta.crate.64.dust:8335, oredict.crateGt64DustHydratedCoal.name
 gregtech:gt.meta.crate.64.dust:8336, oredict.crateGt64DustCharcoal.name
 gregtech:gt.meta.crate.64.dust:8337, oredict.crateGt64DustLignite.name
 gregtech:gt.meta.crate.64.dust:8338, oredict.crateGt64DustMonazite.name
-gregtech:gt.meta.crate.64.dust:8340, oredict.crateGt64DustNikolite.name
 gregtech:gt.meta.crate.64.dust:8341, oredict.crateGt64DustGlowstone.name
-gregtech:gt.meta.crate.64.dust:8343, oredict.crateGt64DustForce.name
 gregtech:gt.meta.crate.64.dust:8346, oredict.crateGt64DustNetherQuartz.name
 gregtech:gt.meta.crate.64.dust:8347, oredict.crateGt64DustCertusQuartz.name
 gregtech:gt.meta.crate.64.dust:8348, oredict.crateGt64DustChargedCertusQuartz.name
 gregtech:gt.meta.crate.64.dust:8349, oredict.crateGt64DustCoalCoke.name
-gregtech:gt.meta.crate.64.dust:8352, oredict.crateGt64DustInfusedAir.name
-gregtech:gt.meta.crate.64.dust:8353, oredict.crateGt64DustInfusedFire.name
-gregtech:gt.meta.crate.64.dust:8354, oredict.crateGt64DustInfusedEarth.name
-gregtech:gt.meta.crate.64.dust:8355, oredict.crateGt64DustInfusedWater.name
-gregtech:gt.meta.crate.64.dust:8356, oredict.crateGt64DustInfusedEntropy.name
-gregtech:gt.meta.crate.64.dust:8357, oredict.crateGt64DustInfusedOrder.name
 gregtech:gt.meta.crate.64.dust:8360, oredict.crateGt64DustPeat.name
 gregtech:gt.meta.crate.64.dust:8361, oredict.crateGt64DustPeatBituminous.name
 gregtech:gt.meta.crate.64.dust:8362, oredict.crateGt64DustAnthracite.name
@@ -7882,9 +7703,6 @@ gregtech:gt.meta.crate.64.dust:8448, oredict.crateGt64DustGreenAventurine.name
 gregtech:gt.meta.crate.64.dust:8449, oredict.crateGt64DustBlackAventurine.name
 gregtech:gt.meta.crate.64.dust:8450, oredict.crateGt64DustBlueAventurine.name
 gregtech:gt.meta.crate.64.dust:8451, oredict.crateGt64DustRedAventurine.name
-gregtech:gt.meta.crate.64.dust:8452, oredict.crateGt64DustMoonstone.name
-gregtech:gt.meta.crate.64.dust:8453, oredict.crateGt64DustSunstone.name
-gregtech:gt.meta.crate.64.dust:8454, oredict.crateGt64DustChimerite.name
 gregtech:gt.meta.crate.64.dust:8455, oredict.crateGt64DustClayRed.name
 gregtech:gt.meta.crate.64.dust:8456, oredict.crateGt64DustGloomstone.name
 gregtech:gt.meta.crate.64.dust:8457, oredict.crateGt64DustVoidQuartz.name
@@ -7928,15 +7746,11 @@ gregtech:gt.meta.crate.64.dust:8637, oredict.crateGt64DustHSLASteel.name
 gregtech:gt.meta.crate.64.dust:8638, oredict.crateGt64DustTungstenCarbide.name
 gregtech:gt.meta.crate.64.dust:8639, oredict.crateGt64DustHSLASpringSteel.name
 gregtech:gt.meta.crate.64.dust:8642, oredict.crateGt64DustPigIron.name
-gregtech:gt.meta.crate.64.dust:8648, oredict.crateGt64DustDarkIron.name
 gregtech:gt.meta.crate.64.dust:8649, oredict.crateGt64DustMeteoricIron.name
 gregtech:gt.meta.crate.64.dust:8650, oredict.crateGt64DustMeteoricSteel.name
 gregtech:gt.meta.crate.64.dust:8651, oredict.crateGt64DustSteelGalvanized.name
 gregtech:gt.meta.crate.64.dust:8653, oredict.crateGt64DustVanadiumSteel.name
 gregtech:gt.meta.crate.64.dust:8654, oredict.crateGt64DustTitaniumGold.name
-gregtech:gt.meta.crate.64.dust:8657, oredict.crateGt64DustPurpleAlloy.name
-gregtech:gt.meta.crate.64.dust:8658, oredict.crateGt64DustElectrotineAlloy.name
-gregtech:gt.meta.crate.64.dust:8659, oredict.crateGt64DustBlueAlloy.name
 gregtech:gt.meta.crate.64.dust:8660, oredict.crateGt64DustRedAlloy.name
 gregtech:gt.meta.crate.64.dust:8661, oredict.crateGt64DustInvar.name
 gregtech:gt.meta.crate.64.dust:8662, oredict.crateGt64DustConstantan.name
@@ -7963,17 +7777,14 @@ gregtech:gt.meta.crate.64.dust:8689, oredict.crateGt64DustNiobiumTitanium.name
 gregtech:gt.meta.crate.64.dust:8700, oredict.crateGt64DustAluminiumBrass.name
 gregtech:gt.meta.crate.64.dust:8701, oredict.crateGt64DustAredrite.name
 gregtech:gt.meta.crate.64.dust:8702, oredict.crateGt64DustAlumite.name
-gregtech:gt.meta.crate.64.dust:8703, oredict.crateGt64DustManyullyn.name
 gregtech:gt.meta.crate.64.dust:8704, oredict.crateGt64DustVibraniumSteel.name
 gregtech:gt.meta.crate.64.dust:8705, oredict.crateGt64DustVibraniumSilver.name
 gregtech:gt.meta.crate.64.dust:8706, oredict.crateGt64DustVibramantium.name
-gregtech:gt.meta.crate.64.dust:8707, oredict.crateGt64DustArdite.name
 gregtech:gt.meta.crate.64.dust:8708, oredict.crateGt64DustSignalum.name
 gregtech:gt.meta.crate.64.dust:8709, oredict.crateGt64DustLumium.name
 gregtech:gt.meta.crate.64.dust:8710, oredict.crateGt64DustEnderium.name
 gregtech:gt.meta.crate.64.dust:8711, oredict.crateGt64DustElectrumFlux.name
 gregtech:gt.meta.crate.64.dust:8718, oredict.crateGt64DustBedrockHSLAAlloy.name
-gregtech:gt.meta.crate.64.dust:8719, oredict.crateGt64DustOsmium.name
 gregtech:gt.meta.crate.64.dust:8725, oredict.crateGt64DustPulsatingIron.name
 gregtech:gt.meta.crate.64.dust:8726, oredict.crateGt64DustVibrantAlloy.name
 gregtech:gt.meta.crate.64.dust:8727, oredict.crateGt64DustConductiveIron.name
@@ -7985,7 +7796,6 @@ gregtech:gt.meta.crate.64.dust:8732, oredict.crateGt64DustSoularium.name
 gregtech:gt.meta.crate.64.dust:8733, oredict.crateGt64DustRedstoneAlloy.name
 gregtech:gt.meta.crate.64.dust:8734, oredict.crateGt64DustSpectreIron.name
 gregtech:gt.meta.crate.64.dust:8736, oredict.crateGt64DustEndium.name
-gregtech:gt.meta.crate.64.dust:8737, oredict.crateGt64DustNikolineAlloy.name
 gregtech:gt.meta.crate.64.dust:8744, oredict.crateGt64DustAncientDebris.name
 gregtech:gt.meta.crate.64.dust:8745, oredict.crateGt64DustNetherite.name
 gregtech:gt.meta.crate.64.dust:8746, oredict.crateGt64DustNetherizedDiamond.name
@@ -7994,14 +7804,10 @@ gregtech:gt.meta.crate.64.dust:8751, oredict.crateGt64DustDuranium.name
 gregtech:gt.meta.crate.64.dust:8752, oredict.crateGt64DustTritanium.name
 gregtech:gt.meta.crate.64.dust:8753, oredict.crateGt64DustDolamide.name
 gregtech:gt.meta.crate.64.dust:8756, oredict.crateGt64DustDuralumin.name
-gregtech:gt.meta.crate.64.dust:8763, oredict.crateGt64DustMeutoite.name
 gregtech:gt.meta.crate.64.dust:8766, oredict.crateGt64DustHSLATungstenAlloy.name
-gregtech:gt.meta.crate.64.dust:8773, oredict.crateGt64DustEximite.name
-gregtech:gt.meta.crate.64.dust:8781, oredict.crateGt64DustDesichalkos.name
 gregtech:gt.meta.crate.64.dust:8782, oredict.crateGt64DustTartarite.name
 gregtech:gt.meta.crate.64.dust:8784, oredict.crateGt64DustAdamantine.name
 gregtech:gt.meta.crate.64.dust:8790, oredict.crateGt64DustTrinitanium.name
-gregtech:gt.meta.crate.64.dust:8791, oredict.crateGt64DustDraconium.name
 gregtech:gt.meta.crate.64.dust:8793, oredict.crateGt64DustTitaniumIridium.name
 gregtech:gt.meta.crate.64.dust:8794, oredict.crateGt64DustTitaniumAluminide.name
 gregtech:gt.meta.crate.64.dust:8795, oredict.crateGt64DustBedrockium.name
@@ -8422,7 +8228,6 @@ gregtech:gt.meta.crate.64.ingot:8281, oredict.crateGt64IngotWaxSoulful.name
 gregtech:gt.meta.crate.64.ingot:8334, oredict.crateGt64IngotCoal.name
 gregtech:gt.meta.crate.64.ingot:8336, oredict.crateGt64IngotCharcoal.name
 gregtech:gt.meta.crate.64.ingot:8337, oredict.crateGt64IngotLignite.name
-gregtech:gt.meta.crate.64.ingot:8343, oredict.crateGt64IngotForce.name
 gregtech:gt.meta.crate.64.ingot:8349, oredict.crateGt64IngotCoalCoke.name
 gregtech:gt.meta.crate.64.ingot:8360, oredict.crateGt64IngotPeat.name
 gregtech:gt.meta.crate.64.ingot:8361, oredict.crateGt64IngotPeatBituminous.name
@@ -8462,16 +8267,12 @@ gregtech:gt.meta.crate.64.ingot:8644, oredict.crateGt64IngotIronCompressed.name
 gregtech:gt.meta.crate.64.ingot:8645, oredict.crateGt64IngotIronMagnetic.name
 gregtech:gt.meta.crate.64.ingot:8646, oredict.crateGt64IngotSteelMagnetic.name
 gregtech:gt.meta.crate.64.ingot:8647, oredict.crateGt64IngotNeodymiumMagnetic.name
-gregtech:gt.meta.crate.64.ingot:8648, oredict.crateGt64IngotDarkIron.name
 gregtech:gt.meta.crate.64.ingot:8649, oredict.crateGt64IngotMeteoricIron.name
 gregtech:gt.meta.crate.64.ingot:8650, oredict.crateGt64IngotMeteoricSteel.name
 gregtech:gt.meta.crate.64.ingot:8651, oredict.crateGt64IngotSteelGalvanized.name
 gregtech:gt.meta.crate.64.ingot:8652, oredict.crateGt64IngotTungstenSintered.name
 gregtech:gt.meta.crate.64.ingot:8653, oredict.crateGt64IngotVanadiumSteel.name
 gregtech:gt.meta.crate.64.ingot:8654, oredict.crateGt64IngotTitaniumGold.name
-gregtech:gt.meta.crate.64.ingot:8657, oredict.crateGt64IngotPurpleAlloy.name
-gregtech:gt.meta.crate.64.ingot:8658, oredict.crateGt64IngotElectrotineAlloy.name
-gregtech:gt.meta.crate.64.ingot:8659, oredict.crateGt64IngotBlueAlloy.name
 gregtech:gt.meta.crate.64.ingot:8660, oredict.crateGt64IngotRedAlloy.name
 gregtech:gt.meta.crate.64.ingot:8661, oredict.crateGt64IngotInvar.name
 gregtech:gt.meta.crate.64.ingot:8662, oredict.crateGt64IngotConstantan.name
@@ -8498,17 +8299,14 @@ gregtech:gt.meta.crate.64.ingot:8689, oredict.crateGt64IngotNiobiumTitanium.name
 gregtech:gt.meta.crate.64.ingot:8700, oredict.crateGt64IngotAluminiumBrass.name
 gregtech:gt.meta.crate.64.ingot:8701, oredict.crateGt64IngotAredrite.name
 gregtech:gt.meta.crate.64.ingot:8702, oredict.crateGt64IngotAlumite.name
-gregtech:gt.meta.crate.64.ingot:8703, oredict.crateGt64IngotManyullyn.name
 gregtech:gt.meta.crate.64.ingot:8704, oredict.crateGt64IngotVibraniumSteel.name
 gregtech:gt.meta.crate.64.ingot:8705, oredict.crateGt64IngotVibraniumSilver.name
 gregtech:gt.meta.crate.64.ingot:8706, oredict.crateGt64IngotVibramantium.name
-gregtech:gt.meta.crate.64.ingot:8707, oredict.crateGt64IngotArdite.name
 gregtech:gt.meta.crate.64.ingot:8708, oredict.crateGt64IngotSignalum.name
 gregtech:gt.meta.crate.64.ingot:8709, oredict.crateGt64IngotLumium.name
 gregtech:gt.meta.crate.64.ingot:8710, oredict.crateGt64IngotEnderium.name
 gregtech:gt.meta.crate.64.ingot:8711, oredict.crateGt64IngotElectrumFlux.name
 gregtech:gt.meta.crate.64.ingot:8718, oredict.crateGt64IngotBedrockHSLAAlloy.name
-gregtech:gt.meta.crate.64.ingot:8719, oredict.crateGt64IngotOsmium.name
 gregtech:gt.meta.crate.64.ingot:8725, oredict.crateGt64IngotPulsatingIron.name
 gregtech:gt.meta.crate.64.ingot:8726, oredict.crateGt64IngotVibrantAlloy.name
 gregtech:gt.meta.crate.64.ingot:8727, oredict.crateGt64IngotConductiveIron.name
@@ -8520,7 +8318,6 @@ gregtech:gt.meta.crate.64.ingot:8732, oredict.crateGt64IngotSoularium.name
 gregtech:gt.meta.crate.64.ingot:8733, oredict.crateGt64IngotRedstoneAlloy.name
 gregtech:gt.meta.crate.64.ingot:8734, oredict.crateGt64IngotSpectreIron.name
 gregtech:gt.meta.crate.64.ingot:8736, oredict.crateGt64IngotEndium.name
-gregtech:gt.meta.crate.64.ingot:8737, oredict.crateGt64IngotNikolineAlloy.name
 gregtech:gt.meta.crate.64.ingot:8744, oredict.crateGt64IngotAncientDebris.name
 gregtech:gt.meta.crate.64.ingot:8745, oredict.crateGt64IngotNetherite.name
 gregtech:gt.meta.crate.64.ingot:8746, oredict.crateGt64IngotNetherizedDiamond.name
@@ -8528,14 +8325,10 @@ gregtech:gt.meta.crate.64.ingot:8747, oredict.crateGt64IngotEfrine.name
 gregtech:gt.meta.crate.64.ingot:8751, oredict.crateGt64IngotDuranium.name
 gregtech:gt.meta.crate.64.ingot:8752, oredict.crateGt64IngotTritanium.name
 gregtech:gt.meta.crate.64.ingot:8756, oredict.crateGt64IngotDuralumin.name
-gregtech:gt.meta.crate.64.ingot:8763, oredict.crateGt64IngotMeutoite.name
 gregtech:gt.meta.crate.64.ingot:8766, oredict.crateGt64IngotHSLATungstenAlloy.name
-gregtech:gt.meta.crate.64.ingot:8773, oredict.crateGt64IngotEximite.name
-gregtech:gt.meta.crate.64.ingot:8781, oredict.crateGt64IngotDesichalkos.name
 gregtech:gt.meta.crate.64.ingot:8782, oredict.crateGt64IngotTartarite.name
 gregtech:gt.meta.crate.64.ingot:8784, oredict.crateGt64IngotAdamantine.name
 gregtech:gt.meta.crate.64.ingot:8790, oredict.crateGt64IngotTrinitanium.name
-gregtech:gt.meta.crate.64.ingot:8791, oredict.crateGt64IngotDraconium.name
 gregtech:gt.meta.crate.64.ingot:8793, oredict.crateGt64IngotTitaniumIridium.name
 gregtech:gt.meta.crate.64.ingot:8794, oredict.crateGt64IngotTitaniumAluminide.name
 gregtech:gt.meta.crate.64.ingot:8795, oredict.crateGt64IngotBedrockium.name
@@ -8679,7 +8472,6 @@ gregtech:gt.meta.crate.64.plate:8281, oredict.crateGt64PlateWaxSoulful.name
 gregtech:gt.meta.crate.64.plate:8334, oredict.crateGt64PlateCoal.name
 gregtech:gt.meta.crate.64.plate:8336, oredict.crateGt64PlateCharcoal.name
 gregtech:gt.meta.crate.64.plate:8337, oredict.crateGt64PlateLignite.name
-gregtech:gt.meta.crate.64.plate:8343, oredict.crateGt64PlateForce.name
 gregtech:gt.meta.crate.64.plate:8349, oredict.crateGt64PlateCoalCoke.name
 gregtech:gt.meta.crate.64.plate:8362, oredict.crateGt64PlateAnthracite.name
 gregtech:gt.meta.crate.64.plate:8363, oredict.crateGt64PlatePrismane.name
@@ -8734,16 +8526,12 @@ gregtech:gt.meta.crate.64.plate:8644, oredict.crateGt64PlateIronCompressed.name
 gregtech:gt.meta.crate.64.plate:8645, oredict.crateGt64PlateIronMagnetic.name
 gregtech:gt.meta.crate.64.plate:8646, oredict.crateGt64PlateSteelMagnetic.name
 gregtech:gt.meta.crate.64.plate:8647, oredict.crateGt64PlateNeodymiumMagnetic.name
-gregtech:gt.meta.crate.64.plate:8648, oredict.crateGt64PlateDarkIron.name
 gregtech:gt.meta.crate.64.plate:8649, oredict.crateGt64PlateMeteoricIron.name
 gregtech:gt.meta.crate.64.plate:8650, oredict.crateGt64PlateMeteoricSteel.name
 gregtech:gt.meta.crate.64.plate:8651, oredict.crateGt64PlateSteelGalvanized.name
 gregtech:gt.meta.crate.64.plate:8652, oredict.crateGt64PlateTungstenSintered.name
 gregtech:gt.meta.crate.64.plate:8653, oredict.crateGt64PlateVanadiumSteel.name
 gregtech:gt.meta.crate.64.plate:8654, oredict.crateGt64PlateTitaniumGold.name
-gregtech:gt.meta.crate.64.plate:8657, oredict.crateGt64PlatePurpleAlloy.name
-gregtech:gt.meta.crate.64.plate:8658, oredict.crateGt64PlateElectrotineAlloy.name
-gregtech:gt.meta.crate.64.plate:8659, oredict.crateGt64PlateBlueAlloy.name
 gregtech:gt.meta.crate.64.plate:8660, oredict.crateGt64PlateRedAlloy.name
 gregtech:gt.meta.crate.64.plate:8661, oredict.crateGt64PlateInvar.name
 gregtech:gt.meta.crate.64.plate:8662, oredict.crateGt64PlateConstantan.name
@@ -8770,17 +8558,14 @@ gregtech:gt.meta.crate.64.plate:8689, oredict.crateGt64PlateNiobiumTitanium.name
 gregtech:gt.meta.crate.64.plate:8700, oredict.crateGt64PlateAluminiumBrass.name
 gregtech:gt.meta.crate.64.plate:8701, oredict.crateGt64PlateAredrite.name
 gregtech:gt.meta.crate.64.plate:8702, oredict.crateGt64PlateAlumite.name
-gregtech:gt.meta.crate.64.plate:8703, oredict.crateGt64PlateManyullyn.name
 gregtech:gt.meta.crate.64.plate:8704, oredict.crateGt64PlateVibraniumSteel.name
 gregtech:gt.meta.crate.64.plate:8705, oredict.crateGt64PlateVibraniumSilver.name
 gregtech:gt.meta.crate.64.plate:8706, oredict.crateGt64PlateVibramantium.name
-gregtech:gt.meta.crate.64.plate:8707, oredict.crateGt64PlateArdite.name
 gregtech:gt.meta.crate.64.plate:8708, oredict.crateGt64PlateSignalum.name
 gregtech:gt.meta.crate.64.plate:8709, oredict.crateGt64PlateLumium.name
 gregtech:gt.meta.crate.64.plate:8710, oredict.crateGt64PlateEnderium.name
 gregtech:gt.meta.crate.64.plate:8711, oredict.crateGt64PlateElectrumFlux.name
 gregtech:gt.meta.crate.64.plate:8718, oredict.crateGt64PlateBedrockHSLAAlloy.name
-gregtech:gt.meta.crate.64.plate:8719, oredict.crateGt64PlateOsmium.name
 gregtech:gt.meta.crate.64.plate:8725, oredict.crateGt64PlatePulsatingIron.name
 gregtech:gt.meta.crate.64.plate:8726, oredict.crateGt64PlateVibrantAlloy.name
 gregtech:gt.meta.crate.64.plate:8727, oredict.crateGt64PlateConductiveIron.name
@@ -8792,7 +8577,6 @@ gregtech:gt.meta.crate.64.plate:8732, oredict.crateGt64PlateSoularium.name
 gregtech:gt.meta.crate.64.plate:8733, oredict.crateGt64PlateRedstoneAlloy.name
 gregtech:gt.meta.crate.64.plate:8734, oredict.crateGt64PlateSpectreIron.name
 gregtech:gt.meta.crate.64.plate:8736, oredict.crateGt64PlateEndium.name
-gregtech:gt.meta.crate.64.plate:8737, oredict.crateGt64PlateNikolineAlloy.name
 gregtech:gt.meta.crate.64.plate:8744, oredict.crateGt64PlateAncientDebris.name
 gregtech:gt.meta.crate.64.plate:8745, oredict.crateGt64PlateNetherite.name
 gregtech:gt.meta.crate.64.plate:8746, oredict.crateGt64PlateNetherizedDiamond.name
@@ -8800,14 +8584,10 @@ gregtech:gt.meta.crate.64.plate:8747, oredict.crateGt64PlateEfrine.name
 gregtech:gt.meta.crate.64.plate:8751, oredict.crateGt64PlateDuranium.name
 gregtech:gt.meta.crate.64.plate:8752, oredict.crateGt64PlateTritanium.name
 gregtech:gt.meta.crate.64.plate:8756, oredict.crateGt64PlateDuralumin.name
-gregtech:gt.meta.crate.64.plate:8763, oredict.crateGt64PlateMeutoite.name
 gregtech:gt.meta.crate.64.plate:8766, oredict.crateGt64PlateHSLATungstenAlloy.name
-gregtech:gt.meta.crate.64.plate:8773, oredict.crateGt64PlateEximite.name
-gregtech:gt.meta.crate.64.plate:8781, oredict.crateGt64PlateDesichalkos.name
 gregtech:gt.meta.crate.64.plate:8782, oredict.crateGt64PlateTartarite.name
 gregtech:gt.meta.crate.64.plate:8784, oredict.crateGt64PlateAdamantine.name
 gregtech:gt.meta.crate.64.plate:8790, oredict.crateGt64PlateTrinitanium.name
-gregtech:gt.meta.crate.64.plate:8791, oredict.crateGt64PlateDraconium.name
 gregtech:gt.meta.crate.64.plate:8793, oredict.crateGt64PlateTitaniumIridium.name
 gregtech:gt.meta.crate.64.plate:8794, oredict.crateGt64PlateTitaniumAluminide.name
 gregtech:gt.meta.crate.64.plate:8795, oredict.crateGt64PlateBedrockium.name
@@ -8993,7 +8773,6 @@ gregtech:gt.meta.crate.64.plateGem:8312, oredict.crateGt64PlateGemOpal.name
 gregtech:gt.meta.crate.64.plateGem:8313, oredict.crateGt64PlateGemAmethyst.name
 gregtech:gt.meta.crate.64.plateGem:8314, oredict.crateGt64PlateGemOrangeSapphire.name
 gregtech:gt.meta.crate.64.plateGem:8315, oredict.crateGt64PlateGemYellowSapphire.name
-gregtech:gt.meta.crate.64.plateGem:8316, oredict.crateGt64PlateGemVinteum.name
 gregtech:gt.meta.crate.64.plateGem:8317, oredict.crateGt64PlateGemDilithium.name
 gregtech:gt.meta.crate.64.plateGem:8318, oredict.crateGt64PlateGemEnderPearl.name
 gregtech:gt.meta.crate.64.plateGem:8319, oredict.crateGt64PlateGemEnderEye.name
@@ -9013,19 +8792,11 @@ gregtech:gt.meta.crate.64.plateGem:8334, oredict.crateGt64PlateGemCoal.name
 gregtech:gt.meta.crate.64.plateGem:8336, oredict.crateGt64PlateGemCharcoal.name
 gregtech:gt.meta.crate.64.plateGem:8337, oredict.crateGt64PlateGemLignite.name
 gregtech:gt.meta.crate.64.plateGem:8338, oredict.crateGt64PlateGemMonazite.name
-gregtech:gt.meta.crate.64.plateGem:8340, oredict.crateGt64PlateGemNikolite.name
 gregtech:gt.meta.crate.64.plateGem:8341, oredict.crateGt64PlateGemGlowstone.name
-gregtech:gt.meta.crate.64.plateGem:8343, oredict.crateGt64PlateGemForce.name
 gregtech:gt.meta.crate.64.plateGem:8346, oredict.crateGt64PlateGemNetherQuartz.name
 gregtech:gt.meta.crate.64.plateGem:8347, oredict.crateGt64PlateGemCertusQuartz.name
 gregtech:gt.meta.crate.64.plateGem:8348, oredict.crateGt64PlateGemChargedCertusQuartz.name
 gregtech:gt.meta.crate.64.plateGem:8349, oredict.crateGt64PlateGemCoalCoke.name
-gregtech:gt.meta.crate.64.plateGem:8352, oredict.crateGt64PlateGemInfusedAir.name
-gregtech:gt.meta.crate.64.plateGem:8353, oredict.crateGt64PlateGemInfusedFire.name
-gregtech:gt.meta.crate.64.plateGem:8354, oredict.crateGt64PlateGemInfusedEarth.name
-gregtech:gt.meta.crate.64.plateGem:8355, oredict.crateGt64PlateGemInfusedWater.name
-gregtech:gt.meta.crate.64.plateGem:8356, oredict.crateGt64PlateGemInfusedEntropy.name
-gregtech:gt.meta.crate.64.plateGem:8357, oredict.crateGt64PlateGemInfusedOrder.name
 gregtech:gt.meta.crate.64.plateGem:8362, oredict.crateGt64PlateGemAnthracite.name
 gregtech:gt.meta.crate.64.plateGem:8363, oredict.crateGt64PlateGemPrismane.name
 gregtech:gt.meta.crate.64.plateGem:8364, oredict.crateGt64PlateGemLonsdaleite.name
@@ -9075,13 +8846,9 @@ gregtech:gt.meta.crate.64.plateGem:8448, oredict.crateGt64PlateGemGreenAventurin
 gregtech:gt.meta.crate.64.plateGem:8449, oredict.crateGt64PlateGemBlackAventurine.name
 gregtech:gt.meta.crate.64.plateGem:8450, oredict.crateGt64PlateGemBlueAventurine.name
 gregtech:gt.meta.crate.64.plateGem:8451, oredict.crateGt64PlateGemRedAventurine.name
-gregtech:gt.meta.crate.64.plateGem:8452, oredict.crateGt64PlateGemMoonstone.name
-gregtech:gt.meta.crate.64.plateGem:8453, oredict.crateGt64PlateGemSunstone.name
-gregtech:gt.meta.crate.64.plateGem:8454, oredict.crateGt64PlateGemChimerite.name
 gregtech:gt.meta.crate.64.plateGem:8456, oredict.crateGt64PlateGemGloomstone.name
 gregtech:gt.meta.crate.64.plateGem:8457, oredict.crateGt64PlateGemVoidQuartz.name
 gregtech:gt.meta.crate.64.plateGem:8733, oredict.crateGt64PlateGemRedstoneAlloy.name
-gregtech:gt.meta.crate.64.plateGem:8737, oredict.crateGt64PlateGemNikolineAlloy.name
 gregtech:gt.meta.crate.64.plateGem:8746, oredict.crateGt64PlateGemNetherizedDiamond.name
 gregtech:gt.meta.crate.64.plateGem:9101, oredict.crateGt64PlateGemAlmandine.name
 gregtech:gt.meta.crate.64.plateGem:9102, oredict.crateGt64PlateGemAndradite.name
@@ -10589,143 +10356,9 @@ PracticalLogistics:TransceiverArray, Transceiver Array
 PracticalLogistics:HolographicDisplay, Holographic Display
 PracticalLogistics:LargeDisplayScreen, Large Display Screen
 PracticalLogistics:ItemRouter, Item Router
-ThermalExpansion:Machine:0, Redstone Furnace (Resonant)
-ThermalExpansion:Machine:1, Pulverizer (Resonant)
-ThermalExpansion:Machine:2, Sawmill (Resonant)
-ThermalExpansion:Machine:3, Induction Smelter (Resonant)
-ThermalExpansion:Machine:4, Magma Crucible (Resonant)
-ThermalExpansion:Machine:5, Fluid Transposer (Resonant)
-ThermalExpansion:Machine:6, Glacial Precipitator (Resonant)
-ThermalExpansion:Machine:7, Igneous Extruder (Resonant)
-ThermalExpansion:Machine:8, Aqueous Accumulator (Resonant)
-ThermalExpansion:Machine:9, Cyclic Assembler (Resonant)
-ThermalExpansion:Machine:10, Energetic Infuser (Resonant)
-ThermalExpansion:Machine:11, Phytogenic Insolator (Resonant)
-ThermalExpansion:Device:2, Autonomous Activator
-ThermalExpansion:Device:3, Terrain Smasher
-ThermalExpansion:Device:4, Acquisition Apparatus
-ThermalExpansion:Device:5, Nullifier
-ThermalExpansion:Device:6, Item Allocator
-ThermalExpansion:Dynamo:0, Steam Dynamo
-ThermalExpansion:Dynamo:1, Magmatic Dynamo
-ThermalExpansion:Dynamo:2, Compression Dynamo
-ThermalExpansion:Dynamo:3, Reactant Dynamo
-ThermalExpansion:Dynamo:4, Enervation Dynamo
-ThermalExpansion:Cell:0, Creative Energy Cell
-ThermalExpansion:Cell:1, Leadstone Energy Cell
-ThermalExpansion:Cell:1, Leadstone Energy Cell
-ThermalExpansion:Cell:2, Hardened Energy Cell
-ThermalExpansion:Cell:2, Hardened Energy Cell
-ThermalExpansion:Cell:3, Redstone Energy Cell
-ThermalExpansion:Cell:3, Redstone Energy Cell
-ThermalExpansion:Cell:4, Resonant Energy Cell
-ThermalExpansion:Cell:4, Resonant Energy Cell
-ThermalExpansion:Tank:0, Creative Portable Tank
-ThermalExpansion:Tank:1, Portable Tank
-ThermalExpansion:Tank:2, Hardened Portable Tank
-ThermalExpansion:Tank:3, Reinforced Portable Tank
-ThermalExpansion:Tank:4, Resonant Portable Tank
-ThermalExpansion:Strongbox:0, Creative Strongbox
-ThermalExpansion:Strongbox:1, Strongbox
-ThermalExpansion:Strongbox:2, Hardened Strongbox
-ThermalExpansion:Strongbox:3, Reinforced Strongbox
-ThermalExpansion:Strongbox:4, Resonant Strongbox
-ThermalExpansion:Cache:0, Creative Cache
-ThermalExpansion:Cache:1, Cache
-ThermalExpansion:Cache:2, Hardened Cache
-ThermalExpansion:Cache:3, Reinforced Cache
-ThermalExpansion:Cache:4, Resonant Cache
-ThermalExpansion:Workbench:0, Creative Machinist's Workbench
-ThermalExpansion:Workbench:1, Machinist's Workbench
-ThermalExpansion:Workbench:2, Hardened Machinist's Workbench
-ThermalExpansion:Workbench:3, Reinforced Machinist's Workbench
-ThermalExpansion:Workbench:4, Resonant Machinist's Workbench
-ThermalExpansion:Tesseract:0, Tesseract
-ThermalExpansion:Plate:0, Plate Frame
-ThermalExpansion:Plate:1, Redstone Plate
-ThermalExpansion:Plate:2, Impulse Plate
-ThermalExpansion:Plate:3, Translocation Plate
-ThermalExpansion:Plate:4, Charge Plate
-ThermalExpansion:Plate:5, Excursion Plate
-ThermalExpansion:Plate:6, Teleport Plate
-ThermalExpansion:Light:0, Glowstone Illuminator
-ThermalExpansion:Light:0, Glowstone Illuminator
-ThermalExpansion:Light:0, Glowstone Illuminator
-ThermalExpansion:Light:0, Glowstone Illuminator
-ThermalExpansion:Light:0, Glowstone Illuminator
-ThermalExpansion:Light:0, Glowstone Illuminator
-ThermalExpansion:Light:0, Glowstone Illuminator
-ThermalExpansion:Light:0, Glowstone Illuminator
-ThermalExpansion:Light:0, Glowstone Illuminator
-ThermalExpansion:Light:1, Radiant Lumium Lamp
-ThermalExpansion:Light:1, Radiant Lumium Lamp
-ThermalExpansion:Light:1, Radiant Lumium Lamp
-ThermalExpansion:Light:1, Radiant Lumium Lamp
-ThermalExpansion:Light:1, Radiant Lumium Lamp
-ThermalExpansion:Light:1, Radiant Lumium Lamp
-ThermalExpansion:Light:1, Radiant Lumium Lamp
-ThermalExpansion:Light:1, Radiant Lumium Lamp
-ThermalExpansion:Light:1, Radiant Lumium Lamp
-ThermalExpansion:Light:2, Lumium Lamp
-ThermalExpansion:Light:2, Lumium Lamp
-ThermalExpansion:Light:2, Lumium Lamp
-ThermalExpansion:Light:2, Lumium Lamp
-ThermalExpansion:Light:2, Lumium Lamp
-ThermalExpansion:Light:2, Lumium Lamp
-ThermalExpansion:Light:2, Lumium Lamp
-ThermalExpansion:Light:2, Lumium Lamp
-ThermalExpansion:Light:2, Lumium Lamp
-ThermalExpansion:Frame:0, Machine Frame (Basic)
-ThermalExpansion:Frame:1, Machine Frame (Hardened)
-ThermalExpansion:Frame:2, Machine Frame (Reinforced)
-ThermalExpansion:Frame:3, Machine Frame (Resonant)
-ThermalExpansion:Frame:4, Leadstone Energy Cell Frame
-ThermalExpansion:Frame:5, Hardened Energy Cell Frame
-ThermalExpansion:Frame:6, Redstone Energy Cell Frame (Empty)
-ThermalExpansion:Frame:7, Redstone Energy Cell Frame (Full)
-ThermalExpansion:Frame:8, Resonant Energy Cell Frame (Empty)
-ThermalExpansion:Frame:9, Resonant Energy Cell Frame (Full)
-ThermalExpansion:Frame:10, Tesseract Frame (Empty)
-ThermalExpansion:Frame:11, Tesseract Frame (Full)
-ThermalExpansion:Frame:12, Illuminator Frame
-ThermalExpansion:Glass:0, Hardened Glass
-ThermalExpansion:Glass:1, Hardened Lumium Glass
-ThermalExpansion:Rockwool:0, White Rockwool
-ThermalExpansion:Rockwool:1, Orange Rockwool
-ThermalExpansion:Rockwool:2, Magenta Rockwool
-ThermalExpansion:Rockwool:3, Light Blue Rockwool
-ThermalExpansion:Rockwool:4, Yellow Rockwool
-ThermalExpansion:Rockwool:5, Lime Rockwool
-ThermalExpansion:Rockwool:6, Pink Rockwool
-ThermalExpansion:Rockwool:7, Gray Rockwool
-ThermalExpansion:Rockwool:8, Light Gray Rockwool
-ThermalExpansion:Rockwool:9, Cyan Rockwool
-ThermalExpansion:Rockwool:10, Purple Rockwool
-ThermalExpansion:Rockwool:11, Blue Rockwool
-ThermalExpansion:Rockwool:12, Brown Rockwool
-ThermalExpansion:Rockwool:13, Green Rockwool
-ThermalExpansion:Rockwool:14, Red Rockwool
-ThermalExpansion:Rockwool:15, Black Rockwool
-ThermalExpansion:Sponge:0, Dry Creative Sponge
-ThermalExpansion:Sponge:1, Dry Plain Sponge
-ThermalExpansion:Sponge:2, Dry Magmatic Sponge
 gregapi:gt.display.fluid, Fluid Display
 gregapi:gt.integrated_circuit:0, Selector Tag
 gregapi:gt.empty_slot, Empty Slot
-appliedenergistics2:item.ToolCertusQuartzAxe, Certus Quartz Axe
-appliedenergistics2:item.ToolCertusQuartzHoe, Certus Quartz Hoe
-appliedenergistics2:item.ToolCertusQuartzSpade, Certus Quartz Shovel
-appliedenergistics2:item.ToolCertusQuartzPickaxe, Certus Quartz Pickaxe
-appliedenergistics2:item.ToolCertusQuartzSword, Certus Quartz Sword
-appliedenergistics2:item.ToolCertusQuartzWrench, Certus Quartz Wrench
-appliedenergistics2:item.ToolCertusQuartzCuttingKnife, Certus Quartz Cutting Knife
-appliedenergistics2:item.ToolNetherQuartzAxe, Nether Quartz Axe
-appliedenergistics2:item.ToolNetherQuartzHoe, Nether Quartz Hoe
-appliedenergistics2:item.ToolNetherQuartzSpade, Nether Quartz Shovel
-appliedenergistics2:item.ToolNetherQuartzPickaxe, Nether Quartz Pickaxe
-appliedenergistics2:item.ToolNetherQuartzSword, Nether Quartz Sword
-appliedenergistics2:item.ToolNetherQuartzWrench, Nether Quartz Wrench
-appliedenergistics2:item.ToolNetherQuartzCuttingKnife, Nether Quartz Cutting Knife
 appliedenergistics2:item.ToolEntropyManipulator, Entropy Manipulator
 appliedenergistics2:item.ToolWirelessTerminal, Wireless Terminal
 appliedenergistics2:item.ToolBiometricCard, Biometric Card
@@ -13530,11 +13163,6 @@ BuildCraft|Core:mapLocation, Map Location
 BuildCraft|Core:list:0, List
 BuildCraft|Core:list:1, List
 BuildCraft|Core:debugger, Debugger
-BuildCraft|Core:woodenGearItem, Wood Gear
-BuildCraft|Core:stoneGearItem, Stone Gear
-BuildCraft|Core:ironGearItem, Iron Gear
-BuildCraft|Core:goldGearItem, Gold Gear
-BuildCraft|Core:diamondGearItem, Diamond Gear
 BuildCraft|Core:paintbrush, Paintbrush
 BuildCraft|Robotics:robot, Robot
 BuildCraft|Robotics:robotStation, item.robotStation.name
@@ -15338,19 +14966,14 @@ ExtraUtilities:nodeUpgrade:7, Depth-First Search Upgrade
 ExtraUtilities:nodeUpgrade:8, Breadth-First Search Upgrade
 ExtraUtilities:nodeUpgrade:9, Pseudo Round Robin Upgrade
 ExtraUtilities:nodeUpgrade:10, Advanced Item Filter
-ExtraUtilities:lawSword, Kikoku
 ExtraUtilities:golden_lasso:0, Golden Lasso
 ExtraUtilities:divisionSigil, Division Sigil
 ExtraUtilities:unstableingot:0, Unstable Ingot
 ExtraUtilities:unstableingot:1, Semi-stable Nugget
 ExtraUtilities:unstableingot:2, Mobius "Unstable/Stable" Ingot
 ExtraUtilities:builderswand, Builder's Wand
-ExtraUtilities:shears, Precision Shears
 ExtraUtilities:creativebuilderswand, Super Builder's Wand
 ExtraUtilities:ethericsword, Etheric Sword
-ExtraUtilities:erosionShovel, Erosion Shovel
-ExtraUtilities:destructionpickaxe, Destruction Pickaxe
-ExtraUtilities:defoliageAxe, Healing Axe
 ExtraUtilities:temporalHoe, Reversing Hoe
 ExtraUtilities:sonar_goggles, Sonar Goggles
 ExtraUtilities:watering_can, Watering Can

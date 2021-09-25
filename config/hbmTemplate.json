@@ -247,7 +247,8 @@
         ["item","hbm:item.circuit_targeting_tier3",1],
         ["item","hbm:item.pipes_steel",1],
         ["item","hbm:item.mechanism_rifle_2",1],
-        ["item","hbm:tile.crate_iron",1]
+        ["item","hbm:tile.crate_iron",1],
+        ["item","hbm:item.circuit_tantalium",3]
       ],
       "duration": 200
     },
@@ -261,7 +262,8 @@
         ["item","hbm:item.circuit_targeting_tier2",1],
         ["item","hbm:item.pipes_steel",1],
         ["item","hbm:item.mechanism_rifle_1",1],
-        ["item","hbm:tile.crate_iron",1]
+        ["item","hbm:tile.crate_iron",1],
+        ["item","hbm:item.circuit_tantalium",3]
       ],
       "duration": 200
     },
@@ -276,7 +278,8 @@
         ["item","hbm:item.motor_desh",1],
         ["item","hbm:item.hull_small_steel",3],
         ["item","hbm:item.mechanism_launcher_2",1],
-        ["item","hbm:tile.crate_steel",1]
+        ["item","hbm:tile.crate_steel",1],
+        ["item","hbm:item.circuit_tantalium",3]
       ],
       "duration": 200
     },
@@ -291,7 +294,8 @@
         ["item","hbm:item.motor_desh",1],
         ["dict","ingotCopper",32],
         ["item","hbm:item.mechanism_special",1],
-        ["item","hbm:item.battery_lithium",1]
+        ["item","hbm:item.battery_lithium",1],
+        ["item","hbm:item.circuit_tantalium",3]
       ],
       "duration": 200
     },
@@ -306,7 +310,8 @@
         ["item","hbm:item.ingot_polymer",2],
         ["item","hbm:item.hull_small_steel",8],
         ["item","hbm:item.mechanism_launcher_2",1],
-        ["item","hbm:tile.crate_steel",1]
+        ["item","hbm:tile.crate_steel",1],
+        ["item","hbm:item.circuit_tantalium",3]
       ],
       "duration": 200
     },
@@ -321,7 +326,8 @@
         ["item","hbm:item.circuit_targeting_tier3",2],
         ["item","hbm:item.pipes_steel",2],
         ["item","hbm:item.mechanism_rifle_2",2],
-        ["item","hbm:tile.crate_steel",1]
+        ["item","hbm:tile.crate_steel",1],
+        ["item","hbm:item.circuit_tantalium",3]
       ],
       "duration": 200
     },
@@ -336,7 +342,8 @@
         ["item","hbm:item.pipes_steel",1],
         ["item","hbm:item.mechanism_special",3],
         ["item","hbm:item.magnetron",16],
-        ["item","hbm:item.ingot_tcalloy",8]
+        ["item","hbm:item.ingot_tcalloy",8],
+        ["item","hbm:item.circuit_tantalium",3]
       ],
       "duration": 200
     },
@@ -350,7 +357,8 @@
         ["item","hbm:item.circuit_targeting_tier3",1],
         ["item","hbm:item.pipes_steel",1],
         ["item","hbm:item.mechanism_launcher_1",1],
-        ["item","hbm:tile.barrel_steel",1]
+        ["item","hbm:tile.barrel_steel",1],
+        ["item","hbm:item.circuit_tantalium",3]
       ],
       "duration": 200
     },
@@ -455,7 +463,8 @@
         ["dict","ingotIron",4],
         ["dict","plateSteel",2],
         ["dict","plateCopper",2],
-        ["item","hbm:item.wire_red_copper",8]
+        ["item","hbm:item.wire_red_copper",8],
+        ["item","hbm:item.circuit_tantalium",5]
       ],
       "duration": 250
     },
@@ -469,7 +478,8 @@
         ["dict","plateSteel",6],
         ["item","hbm:item.plate_advanced_alloy",4],
         ["item","hbm:item.wire_red_copper",8],
-        ["item","hbm:item.wire_gold",4]
+        ["item","hbm:item.wire_gold",4],
+        ["item","hbm:item.circuit_tantalium",25]
       ],
       "duration": 300
     },
@@ -483,7 +493,8 @@
         ["dict","ingotDesh",2],
         ["item","hbm:item.tank_steel",1],
         ["item","hbm:item.pipes_steel",1],
-        ["item","hbm:item.crystal_diamond",1]
+        ["item","hbm:item.crystal_diamond",1],
+        ["item","hbm:item.circuit_tantalium",15]
       ],
       "duration": 400
     },
@@ -498,21 +509,10 @@
         ["dict","ingotSteel",16],
         ["dict","plateTitanium",16],
         ["item","minecraft:glass",4],
-        ["item","hbm:item.circuit_gold",1]
+        ["item","hbm:item.circuit_gold",1],
+        ["item","hbm:item.circuit_tantalium",15]
       ],
       "duration": 400
-    },
-    {
-      "output": ["item","hbm:tile.machine_reactor",1],
-      "input": [
-        ["item","hbm:item.reactor_core",1],
-        ["dict","ingotSteel",12],
-        ["dict","plateLead",16],
-        ["item","hbm:tile.reinforced_glass",4],
-        ["item","hbm:item.ingot_asbestos",4],
-        ["item","hbm:item.ingot_tcalloy",4]
-      ],
-      "duration": 150
     },
     {
       "output": ["item","hbm:tile.machine_rtg_furnace_off",1],
@@ -551,20 +551,6 @@
       "duration": 250
     },
     {
-      "output": ["item","hbm:tile.machine_reactor_small",1],
-      "input": [
-        ["dict","ingotSteel",6],
-        ["item","hbm:item.ingot_polymer",4],
-        ["dict","plateLead",8],
-        ["dict","plateCopper",4],
-        ["dict","ingotLead",12],
-        ["dict","ingotMingrade",6],
-        ["item","hbm:item.circuit_copper",8],
-        ["item","hbm:item.circuit_red_copper",4]
-      ],
-      "duration": 300
-    },
-    {
       "output": ["item","hbm:tile.machine_industrial_generator",1],
       "input": [
         ["item","hbm:tile.machine_coal_off",2],
@@ -580,25 +566,11 @@
       "duration": 200
     },
     {
-      "output": ["item","hbm:tile.machine_radgen",1],
-      "input": [
-        ["dict","ingotSteel",8],
-        ["dict","plateSteel",32],
-        ["item","hbm:item.coil_magnetized_tungsten",6],
-        ["item","hbm:item.wire_magnetized_tungsten",24],
-        ["item","hbm:item.circuit_gold",4],
-        ["item","hbm:item.reactor_core",3],
-        ["item","hbm:item.ingot_starmetal",1],
-        ["dict","dyeRed",1]
-      ],
-      "duration": 400
-    },
-    {
       "output": ["item","hbm:tile.machine_cyclotron",1],
       "input": [
         ["item","hbm:tile.machine_lithium_battery",3],
         ["item","hbm:tile.hadron_coil_neodymium",8],
-        ["item","hbm:item.wire_advanced_alloy",96],
+        ["item","hbm:item.wire_advanced_alloy",64],
         ["dict","ingotSteel",16],
         ["dict","plateSteel",32],
         ["dict","plateAluminum",32],
@@ -606,7 +578,8 @@
         ["item","hbm:item.plate_polymer",64],
         ["item","hbm:item.board_copper",8],
         ["item","hbm:item.circuit_red_copper",8],
-        ["item","hbm:item.circuit_gold",3]
+        ["item","hbm:item.circuit_gold",3],
+        ["item","hbm:item.circuit_tantalium",50]
       ],
       "duration": 600
     },
@@ -621,6 +594,19 @@
       "duration": 200
     },
     {
+      "output": ["item","hbm:tile.hadron_core",1],
+      "input": [
+        ["item","hbm:tile.hadron_coil_alloy",24],
+        ["dict","ingotSteel",8],
+        ["item","hbm:item.ingot_polymer",16],
+        ["item","hbm:item.ingot_tcalloy",8],
+        ["item","hbm:item.circuit_gold",5],
+        ["item","hbm:item.circuit_schrabidium",5],
+        ["item","hbm:item.circuit_tantalium",192]
+      ],
+      "duration": 300
+    },
+    {
       "output": ["item","hbm:tile.rbmk_blank",1],
       "input": [
         ["item","hbm:tile.concrete_asbestos",4],
@@ -629,6 +615,17 @@
         ["item","hbm:item.plate_polymer",4]
       ],
       "duration": 100
+    },
+    {
+      "output": ["item","hbm:tile.rbmk_console",1],
+      "input": [
+        ["dict","ingotSteel",16],
+        ["dict","plateAluminum",32],
+        ["item","hbm:item.plate_polymer",16],
+        ["item","hbm:item.circuit_gold",5],
+        ["item","hbm:item.circuit_tantalium",20]
+      ],
+      "duration": 300
     },
     {
       "output": ["item","hbm:tile.machine_battery",1],
@@ -745,7 +742,8 @@
         ["item","hbm:item.generator_steel",1],
         ["item","hbm:item.bolt_compound",3],
         ["item","hbm:item.pipes_steel",1],
-        ["item","hbm:item.circuit_aluminium",1]
+        ["item","hbm:item.circuit_aluminium",1],
+        ["item","hbm:item.circuit_tantalium",10]
       ],
       "duration": 200
     },
@@ -761,7 +759,8 @@
         ["item","hbm:item.flywheel_beryllium",1],
         ["item","hbm:item.generator_steel",10],
         ["item","hbm:item.bolt_compound",16],
-        ["item","hbm:item.pipes_steel",3]
+        ["item","hbm:item.pipes_steel",3],
+        ["item","hbm:item.circuit_tantalium",50]
       ],
       "duration": 600
     },
@@ -830,7 +829,8 @@
         ["item","hbm:item.wire_red_copper",8],
         ["item","hbm:item.circuit_copper",2],
         ["item","hbm:item.circuit_red_copper",1],
-        ["item","hbm:item.plate_polymer",8]
+        ["item","hbm:item.plate_polymer",8],
+        ["item","hbm:item.circuit_tantalium",3]
       ],
       "duration": 350
     },
@@ -859,7 +859,8 @@
         ["item","hbm:item.motor",3],
         ["item","hbm:item.ingot_dura_steel",4],
         ["item","hbm:item.bolt_dura_steel",6],
-        ["item","hbm:tile.machine_battery",3]
+        ["item","hbm:tile.machine_battery",3],
+        ["item","hbm:item.circuit_tantalium",30]
       ],
       "duration": 400
     },
@@ -934,6 +935,43 @@
       "duration": 1000
     },
     {
+      "output": ["item","hbm:tile.struct_launcher_core",1],
+      "input": [
+        ["item","hbm:tile.machine_battery",3],
+        ["item","hbm:tile.steel_scaffold",10],
+        ["dict","ingotSteel",16],
+        ["item","hbm:item.ingot_polymer",8],
+        ["item","hbm:item.circuit_red_copper",5],
+        ["item","hbm:item.circuit_tantalium",15]
+      ],
+      "duration": 200
+    },
+    {
+      "output": ["item","hbm:tile.struct_launcher_core_large",1],
+      "input": [
+        ["item","hbm:tile.machine_battery",5],
+        ["item","hbm:tile.steel_scaffold",10],
+        ["dict","ingotSteel",24],
+        ["item","hbm:item.ingot_polymer",12],
+        ["item","hbm:item.circuit_gold",5],
+        ["item","hbm:item.circuit_tantalium",25]
+      ],
+      "duration": 200
+    },
+    {
+      "output": ["item","hbm:tile.struct_soyuz_core",1],
+      "input": [
+        ["item","hbm:tile.machine_lithium_battery",5],
+        ["item","hbm:tile.steel_scaffold",24],
+        ["dict","ingotSteel",32],
+        ["item","hbm:item.ingot_polymer",24],
+        ["item","hbm:item.circuit_gold",5],
+        ["item","hbm:item.upgrade_power_3",3],
+        ["item","hbm:item.circuit_tantalium",100]
+      ],
+      "duration": 200
+    },
+    {
       "output": ["item","hbm:tile.struct_iter_core",1],
       "input": [
         ["dict","ingotSteel",6],
@@ -986,52 +1024,6 @@
         ["item","minecraft:piston",6]
       ],
       "duration": 100
-    },
-    {
-      "output": ["item","hbm:tile.reactor_element",1],
-      "input": [
-        ["dict","ingotSteel",2],
-        ["dict","plateTungCar",4],
-        ["dict","plateLead",2],
-        ["item","hbm:item.ingot_zirconium",2]
-      ],
-      "duration": 150
-    },
-    {
-      "output": ["item","hbm:tile.reactor_control",1],
-      "input": [
-        ["dict","ingotSteel",4],
-        ["dict","ingotLead",6],
-        ["item","hbm:item.bolt_tungsten",6],
-        ["item","hbm:item.motor",1]
-      ],
-      "duration": 100
-    },
-    {
-      "output": ["item","hbm:tile.reactor_hatch",1],
-      "input": [
-        ["item","hbm:tile.brick_concrete",1],
-        ["dict","plateSteel",6]
-      ],
-      "duration": 150
-    },
-    {
-      "output": ["item","hbm:tile.reactor_conductor",1],
-      "input": [
-        ["dict","ingotSteel",4],
-        ["dict","plateCopper",12],
-        ["item","hbm:item.wire_tungsten",4]
-      ],
-      "duration": 130
-    },
-    {
-      "output": ["item","hbm:tile.reactor_computer",1],
-      "input": [
-        ["item","hbm:tile.reactor_conductor",2],
-        ["item","hbm:item.circuit_targeting_tier3",4],
-        ["item","hbm:item.circuit_gold",1]
-      ],
-      "duration": 250
     },
     {
       "output": ["item","hbm:tile.fusion_conductor",1],
@@ -1221,7 +1213,8 @@
         ["item","hbm:item.ingot_polymer",2],
         ["dict","plateSteel",12],
         ["item","hbm:tile.machine_battery",1],
-        ["item","hbm:item.circuit_gold",2]
+        ["item","hbm:item.circuit_gold",2],
+        ["item","hbm:item.circuit_tantalium",5]
       ],
       "duration": 250
     },
@@ -1235,7 +1228,8 @@
         ["item","hbm:item.magnetron",10],
         ["item","hbm:item.motor",3],
         ["item","hbm:item.circuit_gold",4],
-        ["item","hbm:item.coil_copper",12]
+        ["item","hbm:item.coil_copper",12],
+        ["item","hbm:item.circuit_tantalium",20]
       ],
       "duration": 300
     },
