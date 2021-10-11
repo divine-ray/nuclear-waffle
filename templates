@@ -1,6 +1,6 @@
 
 recipes.removeShaped(<modid:item>);
-  mods.avaritia.ExtremeCrafting.addShaped(<modid:item>,
+  mods.avaritia.ExtremeCrafting.addShaped(<modid:item> * quantity,
     [[null, null, null, null, null, null, null, null, null],
     [null, null, null, null, null, null, null, null, null],
     [null, null, null, null, null, null, null, null, null],
@@ -10,3 +10,14 @@ recipes.removeShaped(<modid:item>);
     [null, null, null, null, null, null, null, null, null],
     [null, null, null, null, null, null, null, null, null],
     [null, null, null, null, null, null, null, null, null]]);
+
+recipes.removeShaped(<modid:item>);
+  recipes.addShaped(<modid:item> * quantity;
+    [[null, null, null],
+    [[null, null, null],
+    [[null, null, null]]);
+
+recipes.remove(<modid:item>);
+  recipes.addShaped(<modid:item> * quantity,
+    [[null, null],
+    [null, null]]);
