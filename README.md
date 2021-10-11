@@ -13,7 +13,7 @@ Awful and painful minecraft modpack with [GregTech](https://github.com/GregTech6
 
 beware of the memes
 
-##PLEASE NOTE: you will need to download [chromaticcraft](https://www.curseforge.com/minecraft/mc-mods/chromaticraft) too since the file i had was larget than 100mb which does *not* fit into github
+## PLEASE NOTE: you will need to download [chromaticcraft](https://www.curseforge.com/minecraft/mc-mods/chromaticraft) too since the file i had was larget than 100mb which does *not* fit into github
 
 
 
