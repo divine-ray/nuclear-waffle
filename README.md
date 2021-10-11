@@ -1,4 +1,4 @@
-# name of this thing is pending
+# Nuclear Waffle
 Awful and painful minecraft modpack with [GregTech](https://github.com/GregTech6/gregtech6), [RotaryCraft](https://github.com/ReikaKalseki/RotaryCraft), the [Nuclear Tech Mod](https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT), and others
 
 ### minecraft version: 1.7.10
@@ -13,7 +13,7 @@ Awful and painful minecraft modpack with [GregTech](https://github.com/GregTech6
 
 beware of the memes
 
-
+##PLEASE NOTE: you will need to download [chromaticcraft](https://www.curseforge.com/minecraft/mc-mods/chromaticraft) too since the file i had was larget than 100mb which does *not* fit into github
 
 
 
