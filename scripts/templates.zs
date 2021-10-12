@@ -15,8 +15,8 @@ recipes.removeShaped(<modid:item>);
 recipes.removeShaped(<modid:item>);
   recipes.addShaped(<modid:item> * quantity;
     [[null, null, null],
-    [[null, null, null],
-    [[null, null, null]]);
+    [null, null, null],
+    [null, null, null]]);
 
 //generic 2x2 shaped crafting
 recipes.remove(<modid:item>);
@@ -78,5 +78,5 @@ mods.content.Block.registerBlock("Content", "content_block", "rock", "content_bl
 mods.content.Item.registerItem("Content", "content", "content_item", "misc', 50, 1, "pickaxe", 2, true, ["I am the tooltip text", "I am also!"]);
 
 #Fluids
-//String unlocalizedName, int density, boolean gaseous, int luminosity, int temperature, int viscosity, int color,boolean setFire,  int castingMaterialID,  String stillTexture,  String flowingTexture
+#String unlocalizedName, int density, boolean gaseous, int luminosity, int temperature, int viscosity, int color,boolean setFire,  int castingMaterialID,  String stillTexture,  String flowingTexture
 mods.content.Fluid.registerFluid("content", 5,false,1,300,20,3914239, true,  50, "content_still", "content_flowing"
