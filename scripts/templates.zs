@@ -31,10 +31,10 @@ MTUtilsGT.removeAllRecipes("gt.recipe.",);
   [],[]);
     //false refers if nbt is matched or set to precise, power requirement in GU/t, time requirement in ticks, probability that the item gets produced where 10k is 100%
 
-//####mekanism##### 
+//####mekanism#####
 
 #add specific Metallurgic Infuser recipe
-  //InfusionString, InputInfusion, InputStack, OutputStack 
+  //InfusionString, InputInfusion, InputStack, OutputStack
   //InfusionString = CARBON;TIN;DIAMOND;REDSTONE;FUNGI;BIO;OBSIDIAN
     mods.mekanism.Infuser.addRecipe("OBSIDIAN", 20, <modid:item> * quantity, <modid:item> * quantity);
                                //INFUSIONSTRING       InputStack                OutputStack
@@ -66,3 +66,17 @@ mods.mekanism.Separator.addRecipe(<liquid:fusionfueldt>, 5000, <gas:deuterium>, 
 //remove electrolytic seperator recipe
 //InputFluid, OutputGas1, OutputGas2
 mods.mekanism.Separator.removeRecipe(<liquid:heavywater>, <gas:deuterium>, <gas:oxygen>);
+
+//###################Content Tweaker################################
+
+#Block
+//LocalizedNameString, UnlocalizedNameString, MaterialNameString, TextureNameString, CreativeTabString, renderType , IItemStackArrayDrops, Unbreakable, DoubleHardness, FloatLightLevel, IntLightOpacity
+mods.content.Block.registerBlock("Content", "content_block", "rock", "content_block", "misc", 1, [<minecraft:dirt>, <minecraft:diamond>], false, 0.5f, 0.8f, 2);
+
+//Items
+//LocalizedNameString, UnlocalizedNameString, TextureNameString, CreativeTabString, MaxDamage, MaxStackSize, ToolTypeString, ToolLevel, isFull3D, LoreArrayString
+mods.content.Item.registerItem("Content", "content", "content_item", "misc', 50, 1, "pickaxe", 2, true, ["I am the tooltip text", "I am also!"]);
+
+#Fluids
+//String unlocalizedName, int density, boolean gaseous, int luminosity, int temperature, int viscosity, int color,boolean setFire,  int castingMaterialID,  String stillTexture,  String flowingTexture
+mods.content.Fluid.registerFluid("content", 5,false,1,300,20,3914239, true,  50, "content_still", "content_flowing"
