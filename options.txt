@@ -3,17 +3,17 @@ mouseSensitivity:0.5
 fov:1.0
 gamma:1.0
 saturation:0.0
-renderDistance:5
+renderDistance:6
 guiScale:2
-particles:1
+particles:0
 bobView:true
 anaglyph3d:false
 advancedOpengl:false
-maxFps:60
+maxFps:120
 fboEnable:true
 difficulty:2
 fancyGraphics:false
-ao:0
+ao:2
 clouds:false
 resourcePacks:[]
 lastServer:
@@ -27,7 +27,7 @@ snooperEnabled:true
 fullscreen:false
 enableVsync:true
 hideServerAddress:false
-advancedItemTooltips:true
+advancedItemTooltips:false
 pauseOnLostFocus:true
 showCape:true
 touchscreen:false
@@ -38,7 +38,7 @@ chatHeightFocused:1.0
 chatHeightUnfocused:0.44366196
 chatScale:1.0
 chatWidth:1.0
-showInventoryAchievementHint:false
+showInventoryAchievementHint:true
 mipmapLevels:4
 anisotropicFiltering:1
 streamBytesPerPixel:0.5
@@ -85,6 +85,9 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
+key_PcktCrft Open (FZ):46
+key_Sprint (FZ):0
+key_keys.baubleshud.config:73
 key_key.betterquesting.quests:41
 key_hbm.key.toggleBack:46
 key_hbm.key.toggleHUD:47
@@ -92,6 +95,14 @@ key_hbm.key.reload:19
 key_Pneumatic Helmet Options:33
 key_Pneumatic Helmet Hack:35
 key_Pneumatic Helmet Debugging Drone:21
+key_Baubles Inventory:48
+key_Change Wand Focus:33
+key_Activate Hover Harness:35
+key_Misc Wand Toggle:34
+key_key.placeItem:25
+key_key.toolConfig:46
+key_key.toolProfileChange:43
+key_key.toggleFlight:0
 key_Glider Toggle:34
 key_Sound Locator:38
 key_Night Vision:25
@@ -101,27 +112,37 @@ key_Speed:0
 key_Jump:0
 key_Yeta Wrench Mode:21
 key_Toggle Electromagnet:0
+key_key.monocle.desc:44
 key_invtweaks.key.sort:19
+key_Mekanism Item Mode Switch:50
+key_Mekanism Armor Mode Switch:33
+key_Mekanism Voice:22
 key_pe.key.armor_toggle:33
 key_pe.key.charge:47
 key_pe.key.extra_function:46
 key_pe.key.fire_projectile:19
 key_pe.key.mode:34
+key_ttmisc.toggleArmor:22
+key_Change Arcane Lens:47
+key_Activate Morphic Fingers:49
+key_Toggle Spider Climb:46
+key_Toggle Chameleon Skin:45
 key_key.cofh.empower:47
 key_key.cofh.multimode:46
+key_key.control:29
 key_key.journeymap.map_toggle:36
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
-key_key.journeymap.minimap_type:27
+key_key.journeymap.minimap_type:26
 key_key.journeymap.minimap_type:27
 key_key.journeymap.minimap_preset:43
 key_key.journeymap.create_waypoint:48
 soundCategory_master:1.0
-soundCategory_music:0.0
+soundCategory_music:1.0
 soundCategory_record:1.0
-soundCategory_weather:0.0
+soundCategory_weather:1.0
 soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0
 soundCategory_player:1.0
-soundCategory_ambient:0.06338028
+soundCategory_ambient:1.0

@@ -551,21 +551,6 @@
       "duration": 250
     },
     {
-      "output": ["item","hbm:tile.machine_industrial_generator",1],
-      "input": [
-        ["item","hbm:tile.machine_coal_off",2],
-        ["item","hbm:tile.machine_boiler_off",2],
-        ["item","hbm:tile.machine_large_turbine",1],
-        ["item","hbm:tile.machine_transformer",1],
-        ["item","hbm:tile.steel_scaffold",20],
-        ["dict","ingotSteel",12],
-        ["dict","plateLead",8],
-        ["dict","plateAluminum",12],
-        ["item","hbm:item.pipes_steel",1]
-      ],
-      "duration": 200
-    },
-    {
       "output": ["item","hbm:tile.machine_cyclotron",1],
       "input": [
         ["item","hbm:tile.machine_lithium_battery",3],
@@ -1232,6 +1217,24 @@
         ["item","hbm:item.circuit_tantalium",20]
       ],
       "duration": 300
+    },
+    {
+      "output": ["item","Mekanism:MachineBlock",1,4],
+      "input": [
+        ["item","hbm:item.ingot_dura_steel",16],
+        ["dict","ingotDesh",8],
+        ["dict","plateSteel",48],
+        ["dict","plateCopper",24],
+        ["item","hbm:item.pipes_steel",8],
+        ["item","hbm:item.circuit_gold",8],
+        ["item","hbm:item.wire_advanced_alloy",24],
+        ["item","hbm:tile.fusion_conductor",12],
+        ["item","hbm:tile.machine_lithium_battery",3],
+        ["item","hbm:item.crystal_redstone",12],
+        ["item","hbm:item.crystal_diamond",8],
+        ["item","hbm:item.motor_desh",16]
+      ],
+      "duration": 18000
     },
     {
       "output": ["item","hbm:item.plate_iron",2],
@@ -3500,6 +3503,17 @@
         ["item","hbm:item.fragment_meteorite",512]
       ],
       "duration": 1000
+    },
+    {
+      "output": ["item","hbm:item.multitool_hit",1],
+      "input": [
+        ["dict","ingotTcAlloy",4],
+        ["dict","plateSteel",4],
+        ["item","hbm:item.wire_gold",12],
+        ["item","hbm:item.motor",4],
+        ["item","hbm:item.circuit_tantalium",16]
+      ],
+      "duration": 100
     },
     {
       "output": ["item","hbm:item.gadget_explosive",1],

@@ -1,0 +1,68 @@
+Research Categories:
+BASICS
+THAUMATURGY
+ALCHEMY
+ARTIFICE
+GOLEMANCY
+ELDRITCH
+rotarycraft
+gadomancy
+UPHOLSTRY
+thaumicenergistics
+TT_CATEGORY
+TX
+ThaumicHorizons
+<aspect:Aer> // Air
+<aspect:Terra> // Earth
+<aspect:Ignis> // Fire
+<aspect:Aqua> // Water
+<aspect:Ordo> // Order, Regularity, Purity
+<aspect:Perditio> // Entropy, Chaos, Destruction
+<aspect:Vacuos> // Void [<aspect:Aer>, <aspect:Perditio>]
+<aspect:Lux> // Light [<aspect:Aer>, <aspect:Ignis>]
+<aspect:Tempestas> // Weather [<aspect:Aer>, <aspect:Aqua>]
+<aspect:Motus> // Motion, Animation [<aspect:Aer>, <aspect:Ordo>]
+<aspect:Gelum> // Ice, Frost, Cold [<aspect:Ignis>, <aspect:Perditio>]
+<aspect:Vitreus> // Crystal, Glass, Clear [<aspect:Terra>, <aspect:Ordo>]
+<aspect:Victus> // Life [<aspect:Aqua>, <aspect:Terra>]
+<aspect:Venenum> // Poison [<aspect:Aqua>, <aspect:Perditio>]
+<aspect:Potentia> // Energy [<aspect:Ordo>, <aspect:Ignis>]
+<aspect:Permutatio> // Exchange, Barter [<aspect:Perditio>, <aspect:Ordo>]
+<aspect:Metallum> // Metal [<aspect:Terra>, <aspect:Vitreus>]
+<aspect:Mortuus> // Death [<aspect:Victus>, <aspect:Perditio>]
+<aspect:Volatus> // Flight [<aspect:Aer>, <aspect:Motus>]
+<aspect:Tenebrae> // Darkness [<aspect:Vacuos>, <aspect:Lux>]
+<aspect:Spiritus> // Soul [<aspect:Victus>, <aspect:Mortuus>]
+<aspect:Sano> // Heal, Cure [<aspect:Victus>, <aspect:Ordo>]
+<aspect:Iter> // Travel, Journey [<aspect:Motus>, <aspect:Terra>]
+<aspect:Alienis> // Alien, Strange, The Eldritch [<aspect:Vacuos>, <aspect:Tenebrae>]
+<aspect:Praecantatio> // Magic [<aspect:Vacuos>, <aspect:Potentia>]
+<aspect:Auram> // Aura [<aspect:Praecantatio>, <aspect:Aer>]
+<aspect:Vitium> // Taint [<aspect:Praecantatio>, <aspect:Perditio>]
+<aspect:Limus> // Slime, Sticky [<aspect:Victus>, <aspect:Aqua>]
+<aspect:Herba> // Plant [<aspect:Victus>, <aspect:Terra>]
+<aspect:Arbor> // Tree, Wood [<aspect:Aer>, <aspect:Herba>]
+<aspect:Bestia> // Beast [<aspect:Motus>, <aspect:Victus>]
+<aspect:Corpus> // Flesh [<aspect:Mortuus>, <aspect:Bestia>]
+<aspect:Exanimis> // Undead [<aspect:Motus>, <aspect:Mortuus>]
+<aspect:Cognitio> // Mind, Memory, Cognition [<aspect:Ignis>, <aspect:Spiritus>]
+<aspect:Sensus> // Senses [<aspect:Aer>, <aspect:Spiritus>]
+<aspect:Humanus> // Man [<aspect:Bestia>, <aspect:Cognitio>]
+<aspect:Messis> // Crop [<aspect:Herba>, <aspect:Humanus>]
+<aspect:Perfodio> // Mine [<aspect:Humanus>, <aspect:Terra>]
+<aspect:Instrumentum> // Tool, Instrument [<aspect:Humanus>, <aspect:Ordo>]
+<aspect:Meto> // Harvest [<aspect:Messis>, <aspect:Instrumentum>]
+<aspect:Telum> // Weapon, Attack, Harm [<aspect:Instrumentum>, <aspect:Ignis>]
+<aspect:Tutamen> // Armor, Protection [<aspect:Instrumentum>, <aspect:Terra>]
+<aspect:Fames> // Hunger [<aspect:Victus>, <aspect:Vacuos>]
+<aspect:Lucrum> // Greed, Avarice [<aspect:Humanus>, <aspect:Fames>]
+<aspect:Fabrico> // Craft [<aspect:Humanus>, <aspect:Instrumentum>]
+<aspect:Pannus> // Cloth, Material, Covering [<aspect:Instrumentum>, <aspect:Bestia>]
+<aspect:Machina> // Mechanism, Machine [<aspect:Motus>, <aspect:Instrumentum>]
+<aspect:Vinculum> // Trap, Imprison [<aspect:Motus>, <aspect:Perditio>]
+<aspect:Strontio> // Stupidness, Incompetence [<aspect:Cognitio>, <aspect:Perditio>]
+<aspect:Nebrisum> // Cheatiness, Raiding, Hoarding [<aspect:Perfodio>, <aspect:Lucrum>]
+<aspect:Electrum> // Electricity, Lightning [<aspect:Potentia>, <aspect:Machina>]
+<aspect:Magneto> // Magnetism, Attraction [<aspect:Metallum>, <aspect:Iter>]
+<aspect:Radio> // Radiation [<aspect:Lux>, <aspect:Potentia>]
+<aspect:Terminus> // The End of Games, Apocalypse, Grindstones [<aspect:Lucrum>, <aspect:Alienis>]
