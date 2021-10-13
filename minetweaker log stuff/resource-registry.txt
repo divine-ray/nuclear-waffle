@@ -1,0 +1,34 @@
+##########ACID##########
+  <gas:sulfuricAcid>, Sulfuric Acid
+  <liquid:aceticacid>, Acetic Acid
+  <liquid:acid_fluid>, Acid
+  <liquid:acrylicacid>, Acrylic Acid
+  <liquid:disulfuricacid>, Disulfuric Acid
+  <liquid:edta>, Ethylenediaminetetraacetic acid
+  <liquid:etchacid>, Etching Acid
+  <liquid:nitricacid>, Nitric Acid
+  <liquid:phosphoricacid>, Phosphoric Acid
+  <liquid:rc hydrofluoric acid>, Hydrofluoric Acid
+    (reactorcraft hydrofluoric acid)
+
+
+##########elementals##########
+
+  <gas:hydrogen>, Hydrogen
+    <liquid:ionizedhydrogen>, Ionized Hydrogen
+  <liquid:helium>, Helium
+    <liquid:hothelium>, Hot Helium
+    <liquid:heliumplasma>, Helium Plasma
+      <liquid:plasma.ionizedhelium>, Ionized Helium Plasma
+
+    <liquid:ionizedhelium>, Ionized Helium
+  <gas:lithium>, Lithium
+  <gas:oxygen>, Oxygen
+    <liquid:liquidoxygen>, Liquid Oxygen
+    <liquid:oxygen>, Liquid Oxygen
+  <gas:sodium>, Sodium
+  <gas:chlorine>, Chlorine
+
+
+
+<gas:ethene>, Ethylene
