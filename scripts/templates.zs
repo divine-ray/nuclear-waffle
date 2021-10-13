@@ -75,8 +75,8 @@ mods.content.Block.registerBlock("Content", "content_block", "rock", "content_bl
 
 //Items
 //LocalizedNameString, UnlocalizedNameString, TextureNameString, CreativeTabString, MaxDamage, MaxStackSize, ToolTypeString, ToolLevel, isFull3D, LoreArrayString
-mods.content.Item.registerItem("Content", "content", "content_item", "misc', 50, 1, "pickaxe", 2, true, ["I am the tooltip text", "I am also!"]);
+mods.content.Item.registerItem("Content", "content", "content_item", "misc", 50, 1, "pickaxe", 2, true, ["I am the tooltip text", "I am also!"]);
 
-#Fluids
-#String unlocalizedName, int density, boolean gaseous, int luminosity, int temperature, int viscosity, int color,boolean setFire,  int castingMaterialID,  String stillTexture,  String flowingTexture
-mods.content.Fluid.registerFluid("content", 5,false,1,300,20,3914239, true,  50, "content_still", "content_flowing"
+//Fluids
+//String unlocalizedName, int density, boolean gaseous, int luminosity, int temperature, int viscosity, int color,boolean setFire,  int castingMaterialID,  String stillTexture,  String flowingTexture
+mods.content.Fluid.registerFluid("content",5,false,1,300,20,3914239, true,  50, "content_still", "content_flowing"
