@@ -44,7 +44,7 @@ Liquids:
 <liquid:aerotheum>, Zephyrean Aerotheum
 <liquid:agar>, Agar
 <liquid:air>, Air
-<liquid:allylchloride>, Allyl Chloride
+<liquid:allylchloride>, Allyl Chloride (for BPA/epoxy production)
 <liquid:ammonia>, Ammonia
 <liquid:amylumsolution>, Amylum Solution
 <liquid:animaltissuehomogenate>, Animal Tissue Homogenate
@@ -625,9 +625,7 @@ Liquids:
 <liquid:molten.purplealloy>, Molten Purple Alloy
 <liquid:molten.radium>, Molten Radium
 <liquid:molten.redalloy>, Molten Red Alloy
-<liquid:molten.redsteel>, Molten Red Steel
-<liquid:molten.redstone>, Molten Redstone
-<liquid:molten.redstonealloy>, Molten Redstone Alloy
+<liquid:molten.redsteel>, Molten Red Steelgg
 <liquid:molten.rhodium>, Molten Rhodium
 <liquid:molten.rubber>, Molten Rubber
 <liquid:molten.rubidium>, Molten Rubidium

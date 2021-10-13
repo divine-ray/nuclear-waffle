@@ -15,20 +15,68 @@
 ##########elementals##########
 
   <gas:hydrogen>, Hydrogen
+    <liquid:hydrogen>, Liquid Hydrogen
     <liquid:ionizedhydrogen>, Ionized Hydrogen
-  <liquid:helium>, Helium
-    <liquid:hothelium>, Hot Helium
-    <liquid:heliumplasma>, Helium Plasma
-      <liquid:plasma.ionizedhelium>, Ionized Helium Plasma
 
-    <liquid:ionizedhelium>, Ionized Helium
+    <liquid:helium>, Helium
+      <liquid:hothelium>, Hot Helium
+      <liquid:heliumplasma>, Helium Plasma
+        <liquid:plasma.ionizedhelium>, Ionized Helium Plasma
+      <liquid:ionizedhelium>, Ionized Helium
+
   <gas:lithium>, Lithium
+    <liquid:lithium>, Liquid Lithium
+
+  <liquid:molten.beryllium>, Molten Beryllium
+
+  <liquid:molten.boron>, Molten Boron
+
+  <liquid:molten.carbon>, Molten Carbon
+    <liquid:carbondioxide>, Carbon Dioxide
+      <liquid:hotcarbondioxide>, Hot Carbon Dioxide
+    <liquid:carbonmonoxide>, Carbon Monoxide
+    <liquid:carbontrioxide>, Carbon Trioxide
+
+  <liquid:nitrogen>, Nitrogen
+    <liquid:nitrogendioxide>, Nitrogen Dioxide
+    <liquid:nitrogenmonoxide>, Nitrogen Monoxide
+    <liquid:nitrogenplasma>, Nitrogen Plasma
+
   <gas:oxygen>, Oxygen
     <liquid:liquidoxygen>, Liquid Oxygen
     <liquid:oxygen>, Liquid Oxygen
-  <gas:sodium>, Sodium
-  <gas:chlorine>, Chlorine
+    <liquid:oxygenplasma>, Oxygen Plasma
 
+  <liquid:fluorine>, Fluorine
+
+  <liquid:neon>, Neon
+
+  <gas:sodium>, Sodium (Natrium)
+    <liquid:sodium>, Liquid Sodium
+        <liquid:molten.sodium>, Molten Sodium
+        <liquid:hotmoltensodium>, Hot Molten Sodium
+      <liquid:rc sodium>, Molten Sodium
+      <liquid:rc warmsodium>, Hot Molten Sodium
+      <liquid:rc hotsodium>, Superheated Molten Sodium
+
+  <liquid:molten.magnesium>, Molten Magnesium
+
+  <liquid:molten.aluminium>, Molten Aluminium
+    <liquid:molten.alumina>, Molten Alumina
+    <liquid:molten.alumite>, Molten Alumite
+
+  <liquid:molten.silicon>, Molten Silicon
+
+  <liquid:phosphoricacid>, Phosphoric Acid
+
+  <gas:chlorine>, Chlorine
+    <liquid:rc chlorine>, Chlorine Gas
+    <liquid:chlorine>, Liquid Chlorine
+
+  <liquid:argon>, Argon
+
+  <liquid:molten.potassium>, Molten Potassium
+  ##########compounds##########
 
 
 <gas:ethene>, Ethylene
