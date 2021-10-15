@@ -1,7 +1,7 @@
 
 
-recipes.removeShaped(<EnderIO:AlloySmelter>);
-  recipes.addShaped(<EnderIO:AlloySmelter>;
+recipes.removeShaped(<EnderIO:EnderIO:blockAlloySmelter>);
+  recipes.addShaped(<EnderIO:EnderIO:blockAlloySmelter>
     [[<hbm:item.ingot_dura_steel>, <hbm:tile.machine_difurnace_off>, <hbm:item.ingot_dura_steel>],
     [<hbm:tile.machine_difurnace_off>, <EnderIO:MachineChassis>, <hbm:tile.machine_difurnace_off>],
     [<hbm:item.ingot_dura_steel>, <hbm:item.coil_tungsten>, <hbm:item.ingot_dura_steel>]]);
@@ -13,7 +13,7 @@ recipes.removeShaped(<EnderIO:MachineChassis>);
     [<PneumaticCraft:compressedIron>, <EnderIO:darkironbars>, <PneumaticCraft:compressedIron>]])
 
 recipes.removeShaped(<EnderIO:basicCapacitor>);
-    recipes.addShaped(<EnderIO:basicCapacitor>;
+    recipes.addShaped(<EnderIO:basicCapacitor>
       [[<hbm:item.wire_advanced_alloy>,<ore:dustRedstone>, null],
       [<ore:foilGold>, <hbm:item.circuit_tantalium>, <ore:foilGold>],
       [null, <ore:dustRedstone>, <hbm:item.wire_advanced_alloy>]]);
