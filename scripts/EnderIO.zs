@@ -41,9 +41,12 @@ recipes.removeShaped(<EnderIO:itemBasicCapacitor:2>); //ocatadic capacitor
 
 //TODO: cbt-ify Armor
 
-//generic 3x3 shaped crafting
+
 recipes.removeShaped(<EnderIO:blockAlloySmelter>);
   recipes.addShaped(<EnderIO:blockAlloySmelter>;
     [<EnderIO:itemAlloy:6>, <hbm:tile.machine_difurnace_rtg_off>, <EnderIO:itemAlloy:6>],
     [<hbm:tile.machine_difurnace_off>, <ore:itemMachineChassi>, <hbm:tile.machine_difurnace_off>],
     [<EnderIO:itemAlloy:6>, <hbm:tile.barrel_iron>, <EnderIO:itemAlloy:6>]]);
+
+recipes.addShapeless(<gregtech:gt.meta.dust:ERRROR
+   #TODO: fx this shit up

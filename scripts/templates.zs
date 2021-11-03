@@ -80,3 +80,18 @@ mods.content.Item.registerItem("Content", "content", "content_item", "misc", 50,
 //Fluids
 //String unlocalizedName, int density, boolean gaseous, int luminosity, int temperature, int viscosity, int color,boolean setFire,  int castingMaterialID,  String stillTexture,  String flowingTexture
 mods.content.Fluid.registerFluid("content",5,false,1,300,20,3914239, true,  50, "content_still", "content_flowing"
+
+#####################AE2###########################
+
+//Inscriber
+//InputArray, plateA, plateB, OutputStack, TypeString //TypeStrings avaible are "Inscribe" and "Press"
+mods.appeng.Inscriber.addRecipe([<minecraft:gold_block>], <appliedenergistics2:item.ItemMultiMaterial:15>, null, <appliedenergistics2:item.ItemMultiMaterial:18> * 9, "Press");
+mods.appeng.Inscriber.addRecipe([<minecraft:iron_ingot>], <minecraft:redstone>, <minecraft:cobblestone>, <minecraft:piston>, "Inscribe");
+//OutputStack
+mods.appeng.Inscriber.removeRecipe(<appliedenergistics2:item.ItemMultiMaterial:15>);
+
+//Grinder
+//InputStack, OutputStack1, Turns, "OutputStack2", "OutputStackChance2", "OutputStack3", " OutputStackChance3" (dobule quotes = optional)
+mods.appeng.Grinder.addRecipe(<minecraft:sandstone>, <minecraft:sand> * 2, 4, <minecraft:sand>, 0.8, <minecraft:sand>, 0.6);
+//OutputStack
+mods.appeng.Grinder.removeRecipe(<minecraft:flint>)

@@ -25,3 +25,17 @@
   <Mekanism:ElectrolyticCore> "Electrolytic Core"
   #TODO: Fix this!
     <Mekanism:tile_BasicBlock.SteelCasing> "Steel Casing"
+
+#####AE2#####
+
+<Appliedenergistics2:item.ItemMultiMaterial:20> "printed silicon"
+
+<appliedenergistics2:item.ItemMultiMaterial:16> "printed calculation (certus) circuit"
+<appliedenergistics2:item.ItemMultiMaterial:20> "printed logic (gold) ciruit"
+<appliedenergistics2:item.ItemMultiMaterial:17> "printed engineering (diamond) circuit"
+
+<appliedenergistics2:item.ItemMultiMaterial:23> "calculation processor"
+<appliedenergistics2:item.ItemMultiMaterial:22> "logic processor"
+<appliedenergistics2:item.ItemMultiMaterial:24> "engineering processor"
+
+<appliedenergistics2:item.ItemMultiMaterial:44> "annihilaton core"
