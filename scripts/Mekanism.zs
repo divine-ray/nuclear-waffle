@@ -34,8 +34,15 @@ mods.mekanism.Infuser.removeRecipe(<Mekanism:ControlCircuit>);
          [<Mekanism:ControlCircuit:2> *4, <hbm:item_plate_desh> * 2, <ore:alloyAdvanced> * 2]);
 
 
-recipes.removeShaped(<Mekanism:AtomicDisassembler:1>);
-  recipes.addShaped(<Mekanism:AtomicDisassembler:1>
-    [[alloyT2, alloyT3, alloyT2],
-    [alloyT2, <hbm:item.cobalt_decorated_pickaxe>, alloyT2]
-    [null, <ore:ingotRefinedObsidian>, null]])
+    recipes.removeShaped(<Mekanism:item.AtomicDisassembler>);
+      recipes.addShaped(<Mekanism:item.AtomicDisassembler>
+        [[alloyT2, alloyT3, alloyT2],
+        [alloyT2, <hbm:item.cobalt_decorated_pickaxe>, alloyT2]
+        [null, <ore:ingotRefinedObsidian>, null]])
+
+    recipes.removeShaped(<mekanism:item.EnergyTablet>);
+      mods.buildcraft.AssemblyTable.addRecipe(<mekanism:item.EnergyTablet>, 5000,
+        [<Mekanism:ControlCircuit>, <hbm:item_plate_gold> * 4, <ore:alloyAdvanced> * 2, <ore:wire_red_copper> * 2]);
+
+recipes.removeShaped(<Mekanism:tile.Generator.WindGenerator>);
+recipes.removeShaped(<Mekanism:tile.Generator.SolarGenerator>);
