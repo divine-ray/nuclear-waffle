@@ -3714,7 +3714,7 @@
         ["item","hbm:hbm:tile.hadron_coil_neodymium",2],
         ["item","hbm:plate_combine_steel",4],
         ["dict","alloyUltimate",2],
-        ["item","mekanism:SteelCasing"]
+        ["item","Mekanism:tile_BasicBlock.SteelCasing"]
       ],
       "duration": 200
     },
