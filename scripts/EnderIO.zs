@@ -9,23 +9,34 @@ recipes.removeShaped(<EnderIO:EnderIO:blockAlloySmelter>);
 recipes.removeShaped(<EnderIO:MachineChassis>);
   recipes.addShaped.(<EnderIO:MachineChassis>;
     [[<PneumaticCraft:compressedIron>, <EnderIO:darkironbars>, <PneumaticCraft:compressedIron>],
-    [<EnderIO:darkironbars>, <EnderIO:basicCapacitor>, <EnderIO:darkironbars>],
+    [<EnderIO:basicCapacitor> , <thermalexpansion:machineFrame:1>, <EnderIO:basicCapacitor>],
     [<PneumaticCraft:compressedIron>, <EnderIO:darkironbars>, <PneumaticCraft:compressedIron>]])
 
-recipes.removeShaped(<EnderIO:basicCapacitor>);
-    recipes.addShaped(<EnderIO:basicCapacitor>
-      [[<hbm:item.wire_advanced_alloy>,<ore:dustRedstone>, null],
-      [<ore:foilGold>, <hbm:item.circuit_tantalium>, <ore:foilGold>],
-      [null, <ore:dustRedstone>, <hbm:item.wire_advanced_alloy>]]);
 
-    recipes.addShaped(<EnderIO:basicCapacitor> * 4;
-      var circuitcomponentsT2 = <ore:null>
-        [[<hbm:item.wire_gold>,circuitcomponentsT2, null],
-        [<ore:plateBatteryAlloy>, <PneumaticCraft:Capacitor>, <ore:plateBatteryAlloy>],
-        [null, circuitcomponentsT2, <hbm:item.wire_gold>]]);
+recipes.removeShaped(<EnderIO:itemBasicCapacitor>);
+    recipes.addShaped(<EnderIO:itemBasicCapacitor>
+      [[null, <ore:foilSignalum>, <ore:chipsetRed>],
+      [<ore:foilSignalum>, <hbm:item.circuit_tantalium>, <ore:foilSignalum>],
+      [<ore:chipsetRed>, <ore:foilSignalum>, null]]);
 
-recipes.removeShaped(<EnderIO:DoubleLayerCapacitor>);
-    recipes.addshaped(<EnderIO:DoubleLayerCapacitor>
+    recipes.addShaped(<EnderIO:itemBasicCapacitor> * 4;
+        [[null, <ore:foilGold>, <hbm:wire_red_copper>],
+        [<ore:foilGold>, <PneumaticCraft:itemCapacitor> , <ore:foilGold>],
+        [<hbm:wire_red_copper>, <ore:foilGold>, null]]);
+
+
+recipes.removeShaped(<EnderIO:itemBasicCapacitor:1>); //double-layer capacitor
+    recipes.addshaped(<EnderIO:itemBasicCapacitor:1>
       [[null, <ore:ingotEnergeticAlloy>, null]
-      [<EnderIO:basicCapacitor>, <ore:circuitBasic>, <EnderIO:basicCapacitor]
+      [<EnderIO:basicCapacitor>, <ore:circuitBasic>, <EnderIO:basicCapacitor>]
       [null, <ore:ingotEnergeticAlloy>, null]]);
+
+
+recipes.removeShaped(<EnderIO:itemBasicCapacitor:2>); //ocatadic capacitor
+    recipes.addshaped(<EnderIO:itemBasicCapacitor:2>
+      [[null, <ore:ingotVibrantAlloy>, null]
+      [<EnderIO:itemBasicCapacitor:1>, <ore:circuitAdvanced>, <EnderIO:itemBasicCapacitor:1>]
+      [null, <ore:ingotVibrantAlloy>, null]]);
+
+
+//TODO: cbt-ify Armor
