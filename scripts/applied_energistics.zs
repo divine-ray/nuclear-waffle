@@ -10,3 +10,6 @@ mods.appeng.Inscriber.addRecipe(
 mods.appeng.Inscriber.addRecipe(
   [<minecraft:appliedenergistics2:item.ItemMultiMaterial:20>, <ore:plateSilicon>]
   )
+
+recipe.removeRecipe(<appliedenergistics2:tile.BlockController>);
+recipe.removeRecipe(<appliedenergistics2:tile.BlockInscriber>);
