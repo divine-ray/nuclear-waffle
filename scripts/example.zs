@@ -1,7 +1,7 @@
 import mods.MTUtilsGT;
 
 ///*
-////// *  All added or removed recipes will reset after start of reload of MineTweaker.
+//////////// *  All added or removed recipes will reset after start of reload of MineTweaker.
  */
 
 //
@@ -20,7 +20,7 @@ import mods.MTUtilsGT;
 ///*  Add a recipe to the Canner.
 // *
 // *  Fluids are optional, please note, "null" as fluids input AND "null" as fluids output dosn't work.
-////// *  Use call without fluids in this case.
+//////////// *  Use call without fluids in this case.
  */
 MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 128, 128, [10000], [<minecraft:cobblestone>], <liquid:soda>*500, <liquid:water>*500, [<minecraft:diamond>]);
 MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 128, 128, [10000], [<minecraft:cobblestone>], [<liquid:soda>*500], [<liquid:water>*500], [<minecraft:diamond>]);
@@ -35,7 +35,7 @@ MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 128, 128, [10000], [<minecr
 // *  First calls would add mixed recipes too (one fluid mapped, second not).
 // *
 // *  Do not call multiple times the mapping of same fluid. It will add more than one same recipe.
-////// *  GT and MTUtilsGT do not check it.
+//////////// *  GT and MTUtilsGT do not check it.
  */
 //MTUtilsGT.addFluidInput(<liquid:soda>,<liquid:mineralsoda>);
 MTUtilsGT.addFluidInput([
