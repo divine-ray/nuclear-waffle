@@ -1,14 +1,26 @@
 
+import minetweaker.item.IItemStack;
 
 
-recipes.removeShaped(<projecte:matter>);
-  recipes.addShaped(<projecte:matter>;
-    [[<avaritia:cosmicFuel>, <avaritia:cosmicFuel>, <avaritia:cosmicFuel>],
-    [[<avaritia:cosmicFuel>, <ore:neutronParticle>, [<avaritia:cosmicFuel>],
-    [<avaritia:cosmicFuel>, <avaritia:cosmicFuel>, <avaritia:cosmicFuel>]]);
+val darkMatter = <ProjectE:item.pe_matter>;
+val redMatter = <ProjectE:item.pe_matter:1>;
+val starFuel = <Avaritia:Resource:8>;
+val neutronParticle = <gregtech:gt.multiitem.physics:1004>;
+val neutronPile = <Avaritia:Resource:2>;
+val neutronIngot = <Avaritia:Resource:4>;
 
-recipes.removeShaped(<projecte:matter:1>);
-  recipes.addShaped(<projecte:matter:1>;
-    [[<projecte:matter>, <projecte:matter>, <projecte:matter>],
-    [<avaritia:cosmicFuel>, <avaritia:cosmicFuel>, <avaritia:cosmicFuel>];
-    [<projecte:matter>, <projecte:matter>, <projecte:matter>]]);
+
+recipes.removeShaped(darkMatter);
+
+  recipes.addShaped(darkMatter,
+  [[starFuel, starFuel, neutronPile],
+  [starFuel, neutronParticle, starFuel],
+  [neutronPile, starFuel, starFuel]]);
+
+
+  recipes.removeShaped(redMatter);
+
+    recipes.addShaped(redMatter,
+      [[starFuel, neutronIngot, starFuel],
+      [darkMatter, darkMatter, darkMatter],
+      [starFuel, neutronIngot, starFuel]]);

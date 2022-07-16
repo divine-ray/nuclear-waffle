@@ -3704,44 +3704,6 @@
         ["item","hbm:item.wire_copper",6]
       ],
       "duration": 150
-    },
-
-
-
-    {
-      "output": ["item","Mekanism:tile.Reactor.ReactorFrame",1],
-      "input": [
-        ["item","hbm:hbm:tile.hadron_coil_neodymium",2],
-        ["item","hbm:plate_combine_steel",4],
-        ["dict","alloyUltimate",2],
-        ["item","Mekanism:tile_BasicBlock.SteelCasing"]
-      ],
-      "duration": 200
-    },
-
-    {
-      "output": ["item","mekanism:tile.ReactorGlass.ReactorGlass",1],
-      "input": [
-        ["dict","hbm:blockGlassHardened",8],
-        ["item","hbm:plate_combine_steel",1],
-        ["dict","alloyUltimate",1],
-        ["item","mekanism:tile.Reactor.ReactorFrame",1]
-      ],
-      "duration": 100
-    },
-
-    {
-          "output": ["item","mekanism:tile.ReactorGlass.ReactorLaserFocusMatrix",1],
-          "input": [
-            ["dict","laserlens",2],
-            "_TODO: fix the laser lens"
-            ["dict","alloyUltimate",4],
-            ["item","mekanism:tile.ReactorGlass.ReactorGlass",2]
-          ],
-          "duration": 200
-        }
-
-
-
+    }
   ]
 }
